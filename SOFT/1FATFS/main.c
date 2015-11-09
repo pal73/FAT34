@@ -1,3 +1,5 @@
+//Ветка "Сказка"
+
 #include "main.h"
 #include <stm32f10x_lib.h>
 //#include <RTL.h>                      /* RTL kernel functions & defines      */
