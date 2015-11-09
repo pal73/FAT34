@@ -1,0 +1,1 @@
+ruslcd.o: ruslcd.c

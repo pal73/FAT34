@@ -1,0 +1,23 @@
+Added Component: Designator=U8(SO-G8)
+Added Pin To Net: NetName=PB13 Pin=U1-34
+Added Pin To Net: NetName=PB13 Pin=U7-2
+Added Pin To Net: NetName=PB13 Pin=U8-6
+Added Net: Name=PB13
+Added Pin To Net: NetName=PB14 Pin=U1-35
+Added Pin To Net: NetName=PB14 Pin=U7-8
+Added Pin To Net: NetName=PB14 Pin=U8-2
+Added Net: Name=PB14
+Added Pin To Net: NetName=PB15 Pin=U1-36
+Added Pin To Net: NetName=PB15 Pin=U7-1
+Added Pin To Net: NetName=PB15 Pin=U8-5
+Added Net: Name=PB15
+Added Pin To Net: NetName=NetQ3_1 Pin=R9-1
+Added Pin To Net: NetName=+3V3 Pin=U7-3
+Added Pin To Net: NetName=+3V3 Pin=U7-5
+Added Pin To Net: NetName=+3V3 Pin=U7-6
+Added Pin To Net: NetName=GND Pin=U7-7
+Added Pin To Net: NetName=+3V3 Pin=U8-3
+Added Pin To Net: NetName=GND Pin=U8-4
+Added Pin To Net: NetName=+3V3 Pin=U8-7
+Added Pin To Net: NetName=+3V3 Pin=U8-8
+Added Member To Class: ClassName=FAT34 Member=Component U8 25LC640

@@ -1,0 +1,15 @@
+This is an RL Flash File System file manipulation example.
+You can create, read, copy, delete files from the SD/MMC 
+Flash Memory Card and format the card. 
+
+The SD_FILE program is a standalone application loaded into
+on-chip flash and available for one target:
+
+MCBSTM32:  Standalone application for Keil MCBSTM32 Board using
+           COM port as a communication interface.
+
+           Connect a serial cable to RS232 COM port using
+           HyperTerminal at 115200 baud, 8-bits, no parity,
+           1 stop bit, XON/XOFF.
+
+

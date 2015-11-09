@@ -1,0 +1,134 @@
+Change Component Designator: OldDesignator=U1 NewDesignator=U2
+Change Component Designator: OldDesignator=U2 NewDesignator=U1
+Added Component: Designator=C1(_1206)
+Added Component: Designator=C2(C3216-1206)
+Added Component: Designator=C3(C3216-1206)
+Added Component: Designator=C4(_1206)
+Added Component: Designator=C5(_1206)
+Added Component: Designator=C6(_1206)
+Added Component: Designator=C7(_1206)
+Added Component: Designator=C8(_1206)
+Added Component: Designator=C9(_1206)
+Added Component: Designator=C10(_1206)
+Added Component: Designator=C11(_1206)
+Added Component: Designator=C12(el5)
+Added Component: Designator=C13(C3216-1206)
+Added Component: Designator=C14(el3)
+Added Component: Designator=JP1(BT5-2-1)
+Added Component: Designator=R1(_1206)
+Added Component: Designator=R2(_1206)
+Added Component: Designator=R3(_1206)
+Added Component: Designator=R4(_1206)
+Added Component: Designator=R5(_1206)
+Added Component: Designator=R6(_1206)
+Added Component: Designator=R7(_1206)
+Added Component: Designator=R8(_1206)
+Added Component: Designator=R9(_1206)
+Added Component: Designator=R10(_1206)
+Added Component: Designator=R11(_1206)
+Added Component: Designator=R12(_1206)
+Added Component: Designator=U3(SO-G8)
+Added Component: Designator=U4(Clipwatt11)
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetC4_1 Pin=C5-1
+Added Pin To Net: NetName=NetC4_1 Pin=R3-1
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=R4-2
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=R5-2
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=NetC7_1 Pin=R1-1
+Added Pin To Net: NetName=NetC7_1 Pin=R8-1
+Added Pin To Net: NetName=NetC7_1 Pin=U3-1
+Added Net: Name=NetC7_1
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Pin To Net: NetName=NetC7_2 Pin=R1-2
+Added Pin To Net: NetName=NetC7_2 Pin=R7-1
+Added Pin To Net: NetName=NetC7_2 Pin=U3-2
+Added Net: Name=NetC7_2
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC9_2 Pin=R7-2
+Added Net: Name=NetC9_2
+Added Pin To Net: NetName=NetC10_1 Pin=C10-1
+Added Pin To Net: NetName=NetC10_1 Pin=R8-2
+Added Net: Name=NetC10_1
+Added Pin To Net: NetName=NetC13_1 Pin=C13-1
+Added Pin To Net: NetName=NetC13_1 Pin=R12-2
+Added Net: Name=NetC13_1
+Added Pin To Net: NetName=NetC14_1 Pin=C14-1
+Added Pin To Net: NetName=NetC14_1 Pin=R10-1
+Added Pin To Net: NetName=NetC14_1 Pin=R11-2
+Added Net: Name=NetC14_1
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=+12V Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=NetC8_1 Pin=C9-1
+Added Pin To Net: NetName=NetC6_2 Pin=C10-2
+Added Pin To Net: NetName=NetC11_1 Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=NetC12_1 Pin=C12-1
+Added Pin To Net: NetName=NetC12_2 Pin=C12-2
+Added Pin To Net: NetName=NetC12_1 Pin=C13-2
+Added Pin To Net: NetName=NetC14_2 Pin=C14-2
+Added Pin To Net: NetName=NetC12_2 Pin=JP1-1
+Added Pin To Net: NetName=GND Pin=JP1-2
+Added Pin To Net: NetName=NetC1_1 Pin=R2-1
+Added Pin To Net: NetName=NetC1_2 Pin=R2-2
+Added Pin To Net: NetName=NetC1_2 Pin=R4-1
+Added Pin To Net: NetName=NetC1_1 Pin=R5-1
+Added Pin To Net: NetName=NetC8_1 Pin=R6-1
+Added Pin To Net: NetName=NetC11_1 Pin=R9-1
+Added Pin To Net: NetName=NetC12_1 Pin=R10-2
+Added Pin To Net: NetName=GND Pin=R11-1
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=NetC11_1 Pin=U3-3
+Added Pin To Net: NetName=GND Pin=U3-4
+Added Pin To Net: NetName=NetC11_1 Pin=U3-5
+Added Pin To Net: NetName=NetC1_2 Pin=U3-6
+Added Pin To Net: NetName=NetC1_1 Pin=U3-7
+Added Pin To Net: NetName=+12V Pin=U3-8
+Added Pin To Net: NetName=NetC3_1 Pin=U4-3
+Added Pin To Net: NetName=NetC14_2 Pin=U4-4
+Added Pin To Net: NetName=NetC6_2 Pin=U4-5
+Added Pin To Net: NetName=GND Pin=U4-6
+Added Pin To Net: NetName=NetC12_1 Pin=U4-8
+Added Pin To Net: NetName=+12V Pin=U4-9
+Added Member To Class: ClassName=FAT34 Member=Component C1 *
+Added Member To Class: ClassName=FAT34 Member=Component C2 *
+Added Member To Class: ClassName=FAT34 Member=Component C3 *
+Added Member To Class: ClassName=FAT34 Member=Component C4 *
+Added Member To Class: ClassName=FAT34 Member=Component C5 *
+Added Member To Class: ClassName=FAT34 Member=Component C6 *
+Added Member To Class: ClassName=FAT34 Member=Component C7 1n0
+Added Member To Class: ClassName=FAT34 Member=Component C8 1n0
+Added Member To Class: ClassName=FAT34 Member=Component C9 1.0
+Added Member To Class: ClassName=FAT34 Member=Component C10 1.0
+Added Member To Class: ClassName=FAT34 Member=Component C11 1.0
+Added Member To Class: ClassName=FAT34 Member=Component C12 1000 x 25
+Added Member To Class: ClassName=FAT34 Member=Component C13 0.1
+Added Member To Class: ClassName=FAT34 Member=Component C14 22.0 x 16
+Added Member To Class: ClassName=FAT34 Member=Component JP1 BT5-2
+Added Member To Class: ClassName=FAT34 Member=Component R1 20K
+Added Member To Class: ClassName=FAT34 Member=Component R2 *
+Added Member To Class: ClassName=FAT34 Member=Component R3 *
+Added Member To Class: ClassName=FAT34 Member=Component R4 *
+Added Member To Class: ClassName=FAT34 Member=Component R5 *
+Added Member To Class: ClassName=FAT34 Member=Component R6 5K1
+Added Member To Class: ClassName=FAT34 Member=Component R7 5K1
+Added Member To Class: ClassName=FAT34 Member=Component R8 1K0
+Added Member To Class: ClassName=FAT34 Member=Component R9 3K0
+Added Member To Class: ClassName=FAT34 Member=Component R10 1K0
+Added Member To Class: ClassName=FAT34 Member=Component R11 1K0
+Added Member To Class: ClassName=FAT34 Member=Component R12 3R0
+Added Member To Class: ClassName=FAT34 Member=Component U3 LM358M
+Added Member To Class: ClassName=FAT34 Member=Component U4 TDA7253

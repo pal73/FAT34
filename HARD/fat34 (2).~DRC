@@ -1,0 +1,83 @@
+Protel Design System Design Rule Check
+PCB File : \Users\Pal\DEVICES\FAT34\HARD\fat34.PcbDoc
+Date     : 07.01.2011
+Time     : 1:12:34
+
+Processing Rule : Hole Size Constraint (Min=0.0254mm) (Max=5mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.2mm) (Max=2mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Broken-Net Constraint ( (All) )
+   Violation         Net NetR31_2   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : U1-60         Subnet : R31-2       Violation         Net NetR29_1   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : R29-1         Subnet : R30-2         Subnet : U2-3        Violation         Net PB4   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP9-5         Subnet : U1-56       Violation         Net PA15   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP9-8         Subnet : U1-50       Violation         Net PA14   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP9-4         Subnet : U1-49       Violation         Net PA13   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP9-2         Subnet : U1-46       Violation         Net NetC7_1   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : U1-13         Subnet : C7-1          Subnet : R32-1       Violation         Net PA7   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : U1-23         Subnet : CS1-3       Violation         Net PA6   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : U1-22         Subnet : CS1-7       Violation         Net PA5   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : U1-21         Subnet : CS1-5       Violation         Net NetC6_2   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : U4-5          Subnet : JP8-1         Subnet : C6-2        Violation         Net NetR1_2   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : R1-2          Subnet : R6-1        Violation         Net NetQ5_3   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : Q5-3          Subnet : R20-2       Violation         Net NetQ3_3   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : R26-1         Subnet : R20-1         Subnet : Q3-3        Violation         Net NetD3_2   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : JP5-2         Subnet : D3-2          Subnet : R6-2        Violation         Net NetJP7_2   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : R25-2         Subnet : JP7-2         Subnet : R27-2       Violation         Net NetR19_2   is broken into 5 sub-nets. Routed To 0.00%
+     Subnet : S3-1          Subnet : S3-1          Subnet : R19-2         Subnet : S3-1          Subnet : S3-1        Violation         Net NetR18_2   is broken into 5 sub-nets. Routed To 0.00%
+     Subnet : S5-1          Subnet : S5-1          Subnet : R18-2         Subnet : S5-1          Subnet : S5-1        Violation         Net NetR17_2   is broken into 5 sub-nets. Routed To 0.00%
+     Subnet : S2-1          Subnet : S2-1          Subnet : R17-2         Subnet : S2-1          Subnet : S2-1        Violation         Net NetR16_2   is broken into 5 sub-nets. Routed To 0.00%
+     Subnet : S4-1          Subnet : S4-1          Subnet : R16-2         Subnet : S4-1          Subnet : S4-1        Violation         Net NetR15_2   is broken into 5 sub-nets. Routed To 0.00%
+     Subnet : S1-1          Subnet : S1-1          Subnet : R15-2         Subnet : S1-1          Subnet : S1-1        Violation         Net NetJP4_3   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP4-3         Subnet : K1-2        Violation         Net NetJP4_2   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP4-2         Subnet : K1-1        Violation         Net NetJP4_1   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP4-1         Subnet : K1-3        Violation         Net NetD2_1   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : JP2-2         Subnet : D2-1          Subnet : JP2-1       Violation         Net NetC14_1   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : C14-1         Subnet : R10-1         Subnet : R11-2       Violation         Net NetC13_1   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : R12-2         Subnet : C13-1       Violation         Net NetJP6_2   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : R23-2         Subnet : R21-2         Subnet : JP6-2       Violation         Net NetQ5_1   is broken into 4 sub-nets. Routed To 0.00%
+     Subnet : R27-1         Subnet : R28-1         Subnet : R26-2         Subnet : Q5-1        Violation         Net NetQ2_1   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : R21-1         Subnet : R7-1          Subnet : Q2-1        Violation         Net NetQ2_3   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : R22-1         Subnet : R8-1          Subnet : Q2-3        Violation         Net NetC6_1   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : R5-2          Subnet : C6-1        Violation         Net NetC5_2   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : R4-2          Subnet : C5-2        Violation         Net NetC4_1   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : R3-1          Subnet : C4-1          Subnet : C5-1        Violation         Net NetC1_2   is broken into 4 sub-nets. Routed To 0.00%
+     Subnet : R2-2          Subnet : R4-1          Subnet : C1-2          Subnet : U3-6        Violation         Net NetC1_1   is broken into 4 sub-nets. Routed To 0.00%
+     Subnet : R2-1          Subnet : R5-1          Subnet : C1-1          Subnet : U3-7        Violation         Net NetD1_1   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : K1-4          Subnet : Q1-3          Subnet : D1-1        Violation         Net +12V   is broken into 15 sub-nets. Routed To 0.00%
+     Subnet : K1-5          Subnet : U4-9          Subnet : C22-1         Subnet : D2-2          Subnet : U6-3          Subnet : C2-1          Subnet : U5-1          Subnet : R9-2          Subnet : Q3-2          Subnet : C19-2         Subnet : C20-2         Subnet : JP7-3         Subnet : U3-8          Subnet : D1-2          Subnet : C17-2       Violation         Net +3V3   is broken into 11 sub-nets. Routed To 0.00%
+     Subnet : C16-1         Subnet : U6-4          Subnet : JP9-1         Subnet : U1-48         Subnet : U1-64         Subnet : R32-2         Subnet : C21-2         Subnet : R1-1          Subnet : U1-32         Subnet : U1-19         Subnet : CS1-4       Violation         Net NetC14_2   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : C14-2         Subnet : U4-4        Violation         Net NetQ1_1   is broken into 3 sub-nets. Routed To 0.00%
+     Subnet : Q1-1          Subnet : R13-1         Subnet : R14-1       Violation         Net PB3   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP9-6         Subnet : U1-55       Violation         Net GND   is broken into 66 sub-nets. Routed To 0.00%
+     Subnet : S4-2          Subnet : JP3-1         Subnet : JP1-2         Subnet : S3-2          Subnet : U5-4          Subnet : JP3-2         Subnet : S4-2          Subnet : S4-2          Subnet : S3-2          Subnet : C3-2          Subnet : S3-2          Subnet : S3-2          Subnet : S2-2          Subnet : S2-2          Subnet : S2-2          Subnet : S2-2          Subnet : C16-2         Subnet : U2-1          Subnet : U6-1          Subnet : R30-1         Subnet : U2-5          Subnet : JP9-3         Subnet : U1-47         Subnet : JP9-9         Subnet : S4-2          Subnet : C15-2         Subnet : S1-2          Subnet : S1-2          Subnet : U1-31         Subnet : U1-63         Subnet : S1-2          Subnet : U1-12         Subnet : U1-18         Subnet : JP8-2         Subnet : U4-6          Subnet : R31-1         Subnet : C7-2          Subnet : R11-1         Subnet : R12-1         Subnet : C2-2          Subnet : C22-2         Subnet : C19-1         Subnet : D3-1          Subnet : C20-1         Subnet : C21-1         Subnet : C4-2          Subnet : U3-4          Subnet : C17-1         Subnet : C18-1         Subnet : S5-2          Subnet : S5-2          Subnet : S5-2          Subnet : S5-2          Subnet : S1-2          Subnet : CS1-6         Subnet : R24-2         Subnet : CS1-10        Subnet : Q5-2          Subnet : JP7-1         Subnet : R14-2         Subnet : Q1-2          Subnet : R28-2         Subnet : Q4-2          Subnet : JP6-1         Subnet : JP5-1         Subnet : U2-16       Violation         Net +5V   is broken into 8 sub-nets. Routed To 0.00%
+     Subnet : U5-3          Subnet : C15-1         Subnet : U2-2          Subnet : R29-2         Subnet : R7-2          Subnet : C18-2         Subnet : Q2-2          Subnet : JP6-3       Violation         Net NetQ3_1   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : R25-1         Subnet : Q3-1        Violation         Net RES   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP9-10        Subnet : U1-7        Violation         Net NetQ4_1   is broken into 4 sub-nets. Routed To 0.00%
+     Subnet : R23-1         Subnet : R24-1         Subnet : R22-2         Subnet : Q4-1        Violation         Net NetC12_1   is broken into 4 sub-nets. Routed To 0.00%
+     Subnet : U4-8          Subnet : C12-1         Subnet : C13-2         Subnet : R10-2       Violation         Net NetC12_2   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : JP1-1         Subnet : C12-2       Violation         Net NetQ4_3   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : Q4-3          Subnet : R8-2        Violation         Net NetC3_1   is broken into 2 sub-nets. Routed To 0.00%
+     Subnet : C3-1          Subnet : U4-3     Rule Violations :51
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (OnLayer('Keep-Out Layer')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (InPoly),(All)
+Rule Violations :0
+
+
+Violations Detected : 51
+Time Elapsed        : 00:00:00

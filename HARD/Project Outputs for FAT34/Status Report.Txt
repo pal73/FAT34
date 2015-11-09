@@ -1,0 +1,16 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Project [FAT34.PrjPCB]
+   Generated File[fat34.GTL]
+   Generated File[fat34.GBL]
+   Generated File[fat34.GTS]
+   Generated File[fat34.GBS]
+   Generated File[fat34.GKO]
+   Generated File[fat34.RUL]
+   Generated File[fat34.REP]
+
+
+Files Generated   : 7
+Documents Printed : 0
+
+Finished Output Generation At 20:24:55 On 07.01.2011

@@ -1,0 +1,11 @@
+Added Component: Designator=U9(SO-G8/E2.9)
+Added Pin To Net: NetName=NetQ3_1 Pin=R9-1
+Added Pin To Net: NetName=GND Pin=U9-1
+Added Pin To Net: NetName=GND Pin=U9-2
+Added Pin To Net: NetName=GND Pin=U9-3
+Added Pin To Net: NetName=GND Pin=U9-4
+Added Pin To Net: NetName=PB7 Pin=U9-5
+Added Pin To Net: NetName=PB6 Pin=U9-6
+Added Pin To Net: NetName=NetR33_2 Pin=U9-7
+Added Pin To Net: NetName=+3V3 Pin=U9-8
+Added Member To Class: ClassName=FAT34 Member=Component U9 ST24C01M6

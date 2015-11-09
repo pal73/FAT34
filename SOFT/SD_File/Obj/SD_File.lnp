@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\obj\stm32_init.o" ".\obj\sd_file.o" ".\obj\getline.o" ".\obj\stm32f10x.o" ".\obj\file_config.o" ".\obj\spi_stm32f103.o" ".\obj\serial.o" ".\obj\retarget.o" "C:\Keil\ARM\RV31\LIB\FS_CM3.lib" --strict --scatter ".\Obj\SD_File.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\SD_File.map" -o ".\Obj\SD_File.axf"

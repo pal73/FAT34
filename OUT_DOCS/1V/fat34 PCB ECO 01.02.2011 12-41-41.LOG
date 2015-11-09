@@ -1,0 +1,7 @@
+Change Component Comment : Designator=C22 Old Comment= New Comment=1000 x 25
+Change Component Comment : Designator=R13 Old Comment=Res2 New Comment=1K0
+Change Component Comment : Designator=R14 Old Comment=Res2 New Comment=10K
+Added Component: Designator=JP3(BT5-2-1)
+Added Pin To Net: NetName=GND Pin=JP3-1
+Added Pin To Net: NetName=GND Pin=JP3-2
+Added Member To Class: ClassName=FAT34p Member=Component JP3 BT5-2

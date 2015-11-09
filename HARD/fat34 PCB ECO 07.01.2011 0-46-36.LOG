@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=PC10 Pin=U1-51
+Added Pin To Net: NetName=PC10 Pin=U2-4
+Added Net: Name=PC10
+Added Pin To Net: NetName=PC11 Pin=U1-52
+Added Pin To Net: NetName=PC11 Pin=U2-6
+Added Net: Name=PC11
+Added Pin To Net: NetName=NetQ3_1 Pin=R9-1

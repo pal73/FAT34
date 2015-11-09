@@ -1,0 +1,10 @@
+Added Component: Designator=C8(_1206)
+Added Component: Designator=R37(_1206)
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=NetC8_1 Pin=R37-1
+Added Pin To Net: NetName=NetC8_1 Pin=U3-5
+Added Net: Name=NetC8_1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=+3V3 Pin=R37-2
+Added Member To Class: ClassName=FAT34 Member=Component C8 1.0
+Added Member To Class: ClassName=FAT34 Member=Component R37 1K0

@@ -1,0 +1,35 @@
+;#<FEEDBACK># ARM Linker, 4.1 [Build 644]: Last Updated: Wed May 22 22:12:51 2013
+;VERSION 0.2
+;FILE 24c01.o
+_24c01_read_2byte <= USED 0
+_24c01_read_byte <= USED 0
+;FILE common_func.o
+abs <= USED 0
+char2lcdbyx <= USED 0
+char2lcdh <= USED 0
+char2lcdhyx <= USED 0
+clr_scrn <= USED 0
+int2lcd_m <= USED 0
+int2lcd_mm <= USED 0
+int2lcd_mmm <= USED 0
+int2lcdhyx <= USED 0
+long2lcd_mmm <= USED 0
+long2lcdhyx <= USED 0
+long2lcdyx_mmm <= USED 0
+pointer_set <= USED 0
+ptr_carry <= USED 0
+show_mess <= USED 0
+sub_bgnd <= USED 0
+;FILE gran.o
+;FILE i2c.o
+;FILE lcd_pal_4_2.o
+;FILE main.o
+SD_Read1024Bytes <= USED 0
+SD_Read256Bytes <= USED 0
+dac_drv <= USED 0
+;FILE ruslcd.o
+;FILE spi_stm32f103.o
+;FILE stm32_init.o
+stm32_GetPCLK1 <= USED 0
+stm32_GetPCLK2 <= USED 0
+;FILE stm32f10x.o

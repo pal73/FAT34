@@ -1,0 +1,15 @@
+Added Component: Designator=R?(_1206)
+Added Component: Designator=R?(_1206)
+Added Component: Designator=U?(SO-G8/E2.9)
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=R?-2
+Added Net: Name=NetR?_1
+Added Pin To Net: NetName=PB6 Pin=U1-58
+Added Net: Name=PB6
+Added Pin To Net: NetName=PB7 Pin=U1-59
+Added Net: Name=PB7
+Added Pin To Net: NetName=NetQ3_1 Pin=R9-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Member To Class: ClassName=FAT34 Member=Component R? 10K
+Added Member To Class: ClassName=FAT34 Member=Component R? 10K

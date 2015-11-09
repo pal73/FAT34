@@ -1,0 +1,27 @@
+*** Creating Trace Output File '.\Obj\SD_File.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\stm32_init.o"'
+### List of Objects: adding '".\obj\sd_file.o"'
+### List of Objects: adding '".\obj\getline.o"'
+### List of Objects: adding '".\obj\stm32f10x.o"'
+### List of Objects: adding '".\obj\file_config.o"'
+### List of Objects: adding '".\obj\spi_stm32f103.o"'
+### List of Objects: adding '".\obj\serial.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '"C:\Keil\ARM\RV31\LIB\FS_CM3.lib"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\obj\stm32_init.o" ".\obj\sd_file.o" ".\obj\getline.o" ".\obj\stm32f10x.o" ".\obj\file_config.o" ".\obj\spi_stm32f103.o" ".\obj\serial.o" ".\obj\retarget.o" "C:\Keil\ARM\RV31\LIB\FS_CM3.lib" --strict --scatter ".\Obj\SD_File.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\SD_File.map" -o ".\Obj\SD_File.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\SD_File.axf'
+### ADS-LD Command File: '.\Obj\SD_File.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\SD_File.lnp', Handle=0x000002FC
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\SD_File.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

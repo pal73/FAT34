@@ -1,0 +1,118 @@
+Removed Pin From Net: NetName=GND Pin=CS1-0
+Removed Pin From Net: NetName=GND Pin=CS1-0
+Removed Pin From Net: NetName=GND Pin=CS1-0
+Removed Pin From Net: NetName=GND Pin=CS1-0
+Removed Pin From Net: NetName=GND Pin=CS1-0
+Removed Pin From Net: NetName=GND Pin=D3-1
+Removed Pin From Net: NetName=NetJP4_3 Pin=JP4-3
+Removed Pin From Net: NetName=GND Pin=JP5-1
+Removed Pin From Net: NetName=GND Pin=JP6-1
+Removed Pin From Net: NetName=+5V Pin=JP6-3
+Removed Pin From Net: NetName=GND Pin=JP7-1
+Removed Pin From Net: NetName=+12V Pin=JP7-3
+Removed Pin From Net: NetName=NetC6_2 Pin=JP8-1
+Removed Pin From Net: NetName=GND Pin=JP8-2
+Removed Pin From Net: NetName=+3V3 Pin=JP9-1
+Removed Pin From Net: NetName=PA13 Pin=JP9-2
+Removed Pin From Net: NetName=GND Pin=JP9-3
+Removed Pin From Net: NetName=PA14 Pin=JP9-4
+Removed Pin From Net: NetName=PB4 Pin=JP9-5
+Removed Pin From Net: NetName=PA15 Pin=JP9-8
+Removed Pin From Net: NetName=GND Pin=JP9-9
+Removed Pin From Net: NetName=RES Pin=JP9-10
+Removed Pin From Net: NetName=+3V3 Pin=JP10-1
+Removed Pin From Net: NetName=PA9 Pin=JP10-3
+Removed Pin From Net: NetName=PA10 Pin=JP10-4
+Removed Pin From Net: NetName=+5V Pin=Q2-2
+Removed Pin From Net: NetName=+12V Pin=Q3-2
+Removed Pin From Net: NetName=+3V3 Pin=R1-1
+Removed Pin From Net: NetName=PB10 Pin=R1-2
+Removed Pin From Net: NetName=PB10 Pin=R6-1
+Removed Pin From Net: NetName=+5V Pin=R7-2
+Removed Pin From Net: NetName=PB11 Pin=R8-2
+Removed Pin From Net: NetName=+12V Pin=R9-2
+Removed Pin From Net: NetName=PB12 Pin=R20-2
+Removed Pin From Net: NetName=NetQ4_1 Pin=R22-2
+Removed Pin From Net: NetName=NetQ5_1 Pin=R26-2
+Removed Pin From Net: NetName=GND Pin=R33-1
+Removed Pin From Net: NetName=NetR33_2 Pin=R33-2
+Removed Pin From Net: NetName=NetR33_2 Pin=R34-1
+Removed Pin From Net: NetName=+3V3 Pin=R34-2
+Removed Pin From Net: NetName=+5V Pin=U2-15
+Removed Pin From Net: NetName=PB15 Pin=U7-1
+Removed Pin From Net: NetName=PB13 Pin=U7-2
+Removed Pin From Net: NetName=+3V3 Pin=U7-3
+Removed Pin From Net: NetName=PC1 Pin=U7-4
+Removed Pin From Net: NetName=+3V3 Pin=U7-5
+Removed Pin From Net: NetName=+3V3 Pin=U7-6
+Removed Pin From Net: NetName=GND Pin=U7-7
+Removed Pin From Net: NetName=PB14 Pin=U7-8
+Removed Pin From Net: NetName=PC0 Pin=U8-1
+Removed Pin From Net: NetName=PB14 Pin=U8-2
+Removed Pin From Net: NetName=+3V3 Pin=U8-3
+Removed Pin From Net: NetName=GND Pin=U8-4
+Removed Pin From Net: NetName=PB15 Pin=U8-5
+Removed Pin From Net: NetName=PB13 Pin=U8-6
+Removed Pin From Net: NetName=+3V3 Pin=U8-7
+Removed Pin From Net: NetName=+3V3 Pin=U8-8
+Removed Member From Class: ClassName=FAT34 Member=D3
+Removed Member From Class: ClassName=FAT34 Member=JP5
+Removed Member From Class: ClassName=FAT34 Member=JP8
+Removed Member From Class: ClassName=FAT34 Member=JP9
+Removed Member From Class: ClassName=FAT34 Member=JP10
+Removed Member From Class: ClassName=FAT34 Member=Q2
+Removed Member From Class: ClassName=FAT34 Member=Q3
+Removed Member From Class: ClassName=FAT34 Member=R1
+Removed Member From Class: ClassName=FAT34 Member=R6
+Removed Member From Class: ClassName=FAT34 Member=R7
+Removed Member From Class: ClassName=FAT34 Member=R8
+Removed Member From Class: ClassName=FAT34 Member=R9
+Removed Member From Class: ClassName=FAT34 Member=R20
+Removed Member From Class: ClassName=FAT34 Member=R21
+Removed Member From Class: ClassName=FAT34 Member=R22
+Removed Member From Class: ClassName=FAT34 Member=R25
+Removed Member From Class: ClassName=FAT34 Member=R26
+Removed Member From Class: ClassName=FAT34 Member=R33
+Removed Member From Class: ClassName=FAT34 Member=R33
+Removed Member From Class: ClassName=FAT34 Member=R33
+Removed Member From Class: ClassName=FAT34 Member=R34
+Removed Member From Class: ClassName=FAT34 Member=U7
+Removed Member From Class: ClassName=FAT34 Member=U8
+Change Component Comment : Designator=C6 Old Comment=* New Comment=1.0
+Change Component Comment : Designator=C5 Old Comment=* New Comment=1.0
+Change Component Comment : Designator=C3 Old Comment=* New Comment=1.0
+Change Component Comment : Designator=C2 Old Comment=* New Comment=1.0
+Change Component Comment : Designator=R5 Old Comment=* New Comment=1K0
+Change Component Comment : Designator=R3 Old Comment=* New Comment=1K0
+Change Component Comment : Designator=C1 Old Comment=* New Comment=1n0
+Change Component Comment : Designator=R23 Old Comment=* New Comment=3K0
+Change Component Comment : Designator=R27 Old Comment=* New Comment=6k8
+Change Component Comment : Designator=R28 Old Comment=* New Comment=10K
+Change Component Comment : Designator=R24 Old Comment=* New Comment=10K
+Change Component Comment : Designator=R4 Old Comment=* New Comment=10K
+Change Component Comment : Designator=R2 Old Comment=* New Comment=10K
+Change Component Comment : Designator=C4 Old Comment=* New Comment=10n
+Change Component Comment : Designator=C16 Old Comment= New Comment=220,0x16
+Change Component Comment : Designator=C15 Old Comment= New Comment=220,0x16
+Change Component Comment : Designator=U2 Old Comment= New Comment=AC162
+Change Component Comment : Designator=R37 Old Comment=1K0 New Comment=3K0
+Change Component Comment : Designator=R31 Old Comment=10K New Comment=1K0
+Change Component Comment : Designator=R19 Old Comment=10K New Comment=3K0
+Change Component Comment : Designator=R18 Old Comment=10K New Comment=3K0
+Change Component Comment : Designator=R17 Old Comment=10K New Comment=3K0
+Change Component Comment : Designator=R16 Old Comment=10K New Comment=3K0
+Change Component Comment : Designator=R15 Old Comment=10K New Comment=3K0
+Change Component Comment : Designator=JP7 Old Comment=Header 3 New Comment=BT5-2
+Change Component Comment : Designator=JP6 Old Comment=Header 3 New Comment=BT5-2
+Change Component Comment : Designator=JP4 Old Comment=Header 3 New Comment=BT5-2
+Change Component Comment : Designator=U9 Old Comment=ST24C01M6 New Comment=M24C02-WMN6
+Change Net Name : Old Net Name=NetJP4_3 New Net Name=NetK1_2
+Change Net Name : Old Net Name=NetR33_2 New Net Name=NetU9_7
+Added Pin To Net: NetName=NetJP6_1 Pin=JP6-1
+Added Pin To Net: NetName=NetJP6_1 Pin=R23-2
+Added Net: Name=NetJP6_1
+Added Pin To Net: NetName=NetJP7_1 Pin=JP7-1
+Added Pin To Net: NetName=NetJP7_1 Pin=R27-2
+Added Net: Name=NetJP7_1
+Added Pin To Net: NetName=+5V Pin=JP6-2
+Added Pin To Net: NetName=+12V Pin=JP7-2

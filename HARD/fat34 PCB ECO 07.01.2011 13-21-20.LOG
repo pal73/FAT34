@@ -1,0 +1,12 @@
+Change Net Name : Old Net Name=NetR16_1 New Net Name=PC4
+Added Pin To Net: NetName=PB0 Pin=R15-1
+Added Pin To Net: NetName=PB0 Pin=U1-26
+Added Net: Name=PB0
+Added Pin To Net: NetName=PC5 Pin=R18-1
+Added Pin To Net: NetName=PC5 Pin=U1-25
+Added Net: Name=PC5
+Added Pin To Net: NetName=PB1 Pin=R17-1
+Added Pin To Net: NetName=PB2 Pin=R19-1
+Added Pin To Net: NetName=NetR16_1 Pin=U1-24
+Added Pin To Net: NetName=PB1 Pin=U1-27
+Added Pin To Net: NetName=PB2 Pin=U1-28

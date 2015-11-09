@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=+3V3 Pin=R?-2
+Change Component Designator: OldDesignator=R? NewDesignator=R33
+Change Component Designator: OldDesignator=R? NewDesignator=R34
+Added Component: Designator=U9(SO-G8/E2.9)
+Added Pin To Net: NetName=NetR33_2 Pin=R33-2
+Added Pin To Net: NetName=NetR33_2 Pin=R34-1
+Added Net: Name=NetR33_2
+Added Pin To Net: NetName=NetQ3_1 Pin=R9-1
+Added Pin To Net: NetName=+3V3 Pin=R34-2
+Added Member To Class: ClassName=FAT34 Member=Component R33 10K

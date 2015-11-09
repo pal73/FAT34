@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=+5V Pin=R16-2
+Change Component Designator: OldDesignator=C? NewDesignator=C7
+Change Component Designator: OldDesignator=JP? NewDesignator=JP9
+Change Component Designator: OldDesignator=R? NewDesignator=R32
+Added Component: Designator=R29(_1206)
+Added Component: Designator=R30(_1206)
+Added Component: Designator=R31(_1206)
+Change Net Name : Old Net Name=NetC?_1 New Net Name=NetC7_1
+Added Pin To Net: NetName=NetR29_1 Pin=R29-1
+Added Pin To Net: NetName=NetR29_1 Pin=R30-2
+Added Pin To Net: NetName=NetR29_1 Pin=U2-3
+Added Net: Name=NetR29_1
+Added Pin To Net: NetName=NetR31_2 Pin=R31-2
+Added Pin To Net: NetName=NetR31_2 Pin=U1-60
+Added Net: Name=NetR31_2
+Added Pin To Net: NetName=PC6 Pin=U1-37
+Added Pin To Net: NetName=PC6 Pin=U2-11
+Added Net: Name=PC6
+Added Pin To Net: NetName=PC7 Pin=U1-38
+Added Pin To Net: NetName=PC7 Pin=U2-12
+Added Net: Name=PC7
+Added Pin To Net: NetName=PC8 Pin=U1-39
+Added Pin To Net: NetName=PC8 Pin=U2-13
+Added Net: Name=PC8
+Added Pin To Net: NetName=PC9 Pin=U1-40
+Added Pin To Net: NetName=PC9 Pin=U2-14
+Added Net: Name=PC9
+Added Pin To Net: NetName=NetQ3_1 Pin=R9-1
+Added Pin To Net: NetName=NetR16_2 Pin=R16-2
+Added Pin To Net: NetName=+5V Pin=R29-2
+Added Pin To Net: NetName=GND Pin=R30-1
+Added Pin To Net: NetName=GND Pin=R31-1
+Added Member To Class: ClassName=FAT34 Member=Component R29 100K
+Added Member To Class: ClassName=FAT34 Member=Component R30 100R
+Added Member To Class: ClassName=FAT34 Member=Component R31 10K

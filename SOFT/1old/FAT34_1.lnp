@@ -1,0 +1,5 @@
+--cpu Cortex-M3 "stm32f10x.o" "stm32_init.o" "main.o" "common_func.o" "24c01.o" "i2c.o" "spi_stm32f103.o" "lcd_pal_4_2.o" "ruslcd.o" "gran.o" --feedback "FAT34_1.fed" 
+--strict --scatter "FAT34_1.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\FAT34_1.map" -o "FAT34_1.axf"
