@@ -46,7 +46,7 @@ unsigned char /*f0,fc0,f1,fc1,*/ret_duty;
 
 //**********************************************
 //Работа с кнопками 
-char but;                            
+short but;                            
 unsigned long but_n,but_s;
 char but0_cnt;
 char but1_cnt;
@@ -123,6 +123,7 @@ signed short max_file;
 signed short current_file;
 signed short current_demo_file;
 signed short main_demo_cnt=25;
+short bWRK;
 //-----------------------------------------------
 //Фискальный счетчик
 signed short main_cnt;
@@ -135,6 +136,7 @@ signed short dac_cnt;
 
 
 char plazma_cnt;
+short plazma_but;
 
 extern  volatile
 UINT Timer1, Timer2;
@@ -360,18 +362,21 @@ GPIOA->CRL|=0x00002000;
 if(wrk_cnt)
 	{
 	wrk_cnt--;
-	wrk_cnt_up++;
-	}
-if((wrk_cnt_up<100)||(wrk_cnt==0))
+	
+	} 
+	
+if(bWRK==1)wrk_cnt_up++;
+
+if(wrk_cnt_up==0)
 	{
 	GPIOA->ODR&=~(1<<3);
 	}
-else if((wrk_cnt_up>100)&&(wrk_cnt))
+else if(wrk_cnt_up)
 	{
 	GPIOA->ODR|=1<<3;
 	}
 
-if(wrk_cnt_up==100)
+/*if(wrk_cnt_up==100)
 	{
 	music_stop();
 	music_start(2,MAIN_TIME,0,5,100,0,10);
@@ -380,7 +385,7 @@ if(wrk_cnt==1)
 	{
 	music_stop();
 	music_start(3,18,0,5,100,0,10);
-	}
+	}  */
 
 if(wrk_cnt==((MAIN_TIME-5)*10))
 	{
@@ -998,18 +1003,18 @@ else if (ind==iSet)
 	{
 	ptrs[0]	=" Длительность   ";
 	ptrs[1]	=" сеанса   !м0@c ";	
-	ptrs[2]	=" Периодичность  ";
+/*	ptrs[2]	=" Периодичность  ";
 	ptrs[3]	=" демоигры #м0$с ";
 	ptrs[4]	=" Длительность   ";
 	ptrs[5]	=" демоигры %м0^с ";
 	ptrs[6]	=" Громкость      ";
 	ptrs[7]	=" звука       )  ";
 	ptrs[8]	=" Количество     ";
-	ptrs[9]	=" файлов      (  "; 
-	ptrs[10]	=" Счетчик        ";
-	ptrs[11]	=" сеансов        "; 
-	ptrs[12]	=" Выход          ";
-	ptrs[13]	="                ";
+	ptrs[9]	=" файлов      (  "; */
+	ptrs[2]	=" Счетчик        ";
+	ptrs[3]	=" сеансов        "; 
+	ptrs[4]	=" Выход          ";
+	ptrs[5]	="                ";
 
 	bgnd_par(ptrs[sub_ind*2],ptrs[sub_ind*2+1]);
 
@@ -1111,8 +1116,29 @@ else if (ind==iDeb)
 		{
 		int2lcdyx(3,0,0,0);
 		}
-	}
-//int2lcdyx(plazma1,0,6,0);
+	} 
+#define butU   65534L
+#define butU_  65406L
+#define butD   65531L
+#define butD_  65403L
+#define butL   65519L
+#define butL_  65391L
+#define butR   65503L
+#define butR_  65375L
+#define butE   65533L
+#define butE_  65405L
+#define butEL_  65280+107
+#define butUD  65280+250
+#define butUD_  65280+122
+#define butLR   65280+207
+#define butLR_   65280+79
+#define butSTART   65279L
+#define butSTOP   65151L
+#define butSTEP   65023L
+//int2lcdyx(plazma_but,0,4,0);
+//int2lcdyx(but,0,10,0);
+//int2lcdyx(butE_,0,15,0);
+//int2lcdyx(but_n,1,5,0);
 ruslcd((unsigned char*)lcd_buffer);
 }
 
@@ -1126,21 +1152,7 @@ ruslcd((unsigned char*)lcd_buffer);
 #define BUT_ON 4
 #define BUT_ONL 20 
 
-#define butU   254
-#define butU_  126
-#define butD   251
-#define butD_  123
-#define butL   239
-#define butL_  111
-#define butR   223
-#define butR_  95
-#define butE   253
-#define butE_  125
-#define butEL_  107
-#define butUD  250
-#define butUD_  122
-#define butLR   207
-#define butLR_   79
+
 
 //-----------------------------------------------
 void but_drv(void)
@@ -1149,6 +1161,10 @@ void but_drv(void)
 but_n=(GPIOB->IDR)|0xfffffff8; 	//	FAT34
 //but_n=(GPIOB->IDR)|0xfffffffc;	//	STM32VLDISVOVERY
 but_n&=(GPIOC->IDR)|0xffffffCf;
+
+if(!(GPIOB->IDR&(1<<11)))but_n&=~(1<<8);
+if(!(GPIOB->IDR&(1<<12)))but_n&=~(1<<9);
+
 if((but_n==0xffffffffUL)||(but_n!=but_s))
  	{
  	speed=0;
@@ -1156,14 +1172,15 @@ if((but_n==0xffffffffUL)||(but_n!=but_s))
    	if (((but0_cnt>=BUT_ON)||(but1_cnt!=0))&&(!l_but))
   		{
    	     n_but=1;
-          but=(char)but_s;
+		 //plazma_but++;
+          but=(short)but_s;
 
           }
    	if (but1_cnt>=but_onL_temp)
   		{
    	     n_but=1;
- 
-          but=((char)but_s)&0x7f;
+ 		 //plazma_but++;
+          but=((short)but_s)&0xff7f;
           }
     	l_but=0;
    	but_onL_temp=BUT_ONL;
@@ -1180,7 +1197,7 @@ if(but_n==but_s)
    		but1_cnt++;
    		if(but1_cnt>=but_onL_temp)
    			{              
-    			but=(char)(but_s&0x7f);
+    			but=(short)(but_s&0xff7f);
     			but1_cnt=0;
     			n_but=1;
     			     
@@ -1215,7 +1232,10 @@ GPIOC->CRL &= ~0x00FF0000;
 GPIOC->CRL |=  0x00880000;
 GPIOC->ODR |=  0x00000030;
 
-	   
+GPIOB->CRH&=~0x000ff000;
+GPIOB->CRH|=0x00088000;
+GPIOB->ODR|=(1<<11)|(1<<12);
+
 }
 
 
@@ -1227,6 +1247,18 @@ void but_an(void)
 //signed short deep,i,cap,ptr;
 if(!n_but)goto but_an_end;
 
+plazma_but++;
+
+if(but==(short)butSTEP)
+	{
+	if(wrk_cnt==0)
+		{
+		wrk_cnt_up=0;
+		bWRK=0;
+		music_stop();
+		}
+	}
+
 if(but==butUD)
 	{
 	if(ind!=iDeb)ind=iDeb;
@@ -1235,7 +1267,25 @@ if(but==butUD)
 
 if(ind==iMn)
 	{
-	if(but==butE_)
+	if((but==(short)butSTART)&&(!bWRK))
+		{
+		wrk_cnt= MAIN_TIME*10;
+		//current_file=1;
+		//gran_ring(&current_file,1,NUM_OF_FILES);
+		//music_start(1,10,0,5,100,0,10);
+		music_start(2,MAIN_TIME+100,0,5,100,0,10);
+		//ind=iMn;
+		wrk_cnt_up=0;
+		bWRK=1;
+		}
+	if(but==(short)butSTOP)
+		{
+		bWRK=0;
+		wrk_cnt_up=0;
+		wrk_cnt=0;
+		music_stop();
+		}
+	if(but==(short)butE_)
 		{
 		tree_up(iSet,0,0,0);
 		}
@@ -1263,41 +1313,41 @@ if(ind==iMn)
 	}
 else if(ind==iSet)
 	{ 
-     if(but==butU)
+     if(but==(short)butU)
      	{
     		sub_ind--;
-     	gran_char(&sub_ind,0,6);
+     	gran_char(&sub_ind,0,2);
      	}
- 	else if(but==butD)
+ 	else if(but==(short)butD)
      	{
      	sub_ind++;
-     	gran_char(&sub_ind,0,6);
+     	gran_char(&sub_ind,0,2);
      	} 
-     else if(but==butD_)
+     else if(but==(short)butD_)
      	{
      	sub_ind=5;
      	}
 	else if(sub_ind==0)
 		{
-		if(but==butR)
+		if(but==(short)butR)
 			{
 			MAIN_TIME=(((MAIN_TIME/10)+1)*10);//MAIN_TIME++;
 			gran(&MAIN_TIME,30,300);
 			_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
 			}
-		else if(but==butR_)
+		else if(but==(short)butR_)
 			{
 			MAIN_TIME=(((MAIN_TIME/10)+1)*10);
 			gran(&MAIN_TIME,30,300);
 			_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
 			}
-		else if(but==butL)
+		else if(but==(short)butL)
 			{
 			MAIN_TIME=(((MAIN_TIME/10)-1)*10);//MAIN_TIME--;
 			gran(&MAIN_TIME,30,300);
 			_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
 			}
-		else if(but==butL_)
+		else if(but==(short)butL_)
 			{
 			MAIN_TIME=(((MAIN_TIME/10)-1)*10);
 			gran(&MAIN_TIME,30,300);
@@ -1307,27 +1357,27 @@ else if(ind==iSet)
 
 		}
 
-	else if(sub_ind==1)
+/*	else if(sub_ind==1)
 		{
-		if(but==butR)
+		if(but==(short)butR)
 			{
 			DEMO_PERIOD=(((DEMO_PERIOD/10)+1)*10);//DEMO_PERIOD++;
 			gran(&DEMO_PERIOD,0,300);
 			_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
 			}
-		else if(but==butR_)
+		else if(but==(short)butR_)
 			{
 			DEMO_PERIOD=(((DEMO_PERIOD/10)+1)*10);
 			gran(&DEMO_PERIOD,0,300);
 			_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
 			}
-		else if(but==butL)
+		else if(but==(short)butL)
 			{
 			DEMO_PERIOD=(((DEMO_PERIOD/10)-1)*10);//DEMO_PERIOD--;
 			gran(&DEMO_PERIOD,0,300);
 			_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
 			}
-		else if(but==butL_)
+		else if(but==(short)butL_)
 			{
 			DEMO_PERIOD=(((DEMO_PERIOD/10)-1)*10);
 			gran(&DEMO_PERIOD,0,300);
@@ -1335,8 +1385,8 @@ else if(ind==iSet)
 			}
 		//speed=1;
 
-		}
-	else if(sub_ind==2)
+		} */
+/*	else if(sub_ind==2)
 		{
 		if((but==butR)||(but==butR_))
 			{
@@ -1344,29 +1394,19 @@ else if(ind==iSet)
 			gran(&DEMO_TIME,0,60);
 			_24c01_write_2byte(EE_DEMO_TIME,DEMO_TIME);
 			}
-	/*	else if(but==butR_)
-			{
-			MAIN_TIME=(((MAIN_TIME/10)+1)*10);
-			gran(&MAIN_TIME,30,300);
-			_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
-			}*/
+
 		else if((but==butL)||(but==butL_))
 			{
 			DEMO_TIME--;
 			gran(&DEMO_TIME,0,60);
 			_24c01_write_2byte(EE_DEMO_TIME,DEMO_TIME);
 			}
-/*		else if(but==butL_)
-			{
-			MAIN_TIME=(((MAIN_TIME/10)-1)*10);
-			gran(&MAIN_TIME,30,300);
-			_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
-			} */
+
 		//speed=1;
 
-		}
+		} */
 
-	else if(sub_ind==3)
+/*	else if(sub_ind==3)
 		{
 		if((but==butR)||(but==butR_))
 			{
@@ -1396,34 +1436,34 @@ else if(ind==iSet)
 			gran(&NUM_OF_FILES,1,20);
 			_24c01_write_2byte(EE_NUM_OF_FILES,NUM_OF_FILES);
 			}
-		}
-	else if(sub_ind==5)
+		}*/
+	else if(sub_ind==1)
 		{
-		if(but==butE_)tree_up(iFisk_prl,0,0,0);
+		if(but==(short)butE_)tree_up(iFisk_prl,0,0,0);
 		}
-	else if(sub_ind==6)
+	else if(sub_ind==2)
 		{
-		if(but==butE_)tree_down(0,0);
+		if(but==(short)butE_)tree_down(0,0);
 		}														
 	}
 else if(ind==iFisk_prl)
 	{
 	short tempU;
 	speed=1;
-	if ((but==butU)||(but==butU_))parol[sub_ind]++;
-	else if ((but==butD)||(but==butD_))parol[sub_ind]--;
+	if ((but==(short)butU)||(but==(short)butU_))parol[sub_ind]++;
+	else if ((but==(short)butD)||(but==(short)butD_))parol[sub_ind]--;
 	gran_ring_char(&parol[sub_ind],0x00,0x09);
-	if (but==butR)
+	if (but==(short)butR)
 		{
 		sub_ind++;
 		gran_ring_char(&sub_ind,0,2);
 		} 
-	else if (but==butL)
+	else if (but==(short)butL)
 		{ 
 		sub_ind--;
 		gran_ring_char(&sub_ind,0,2); 
 		}
-	else if(but==butE)
+	else if(but==(short)butE)
 		{
 		tempU=parol[2]+(parol[1]*10U)+(parol[0]*100U);
 		if(ind==iFisk_prl)
@@ -1717,8 +1757,8 @@ while (1)
 		but_drv();
 		but_an();
 		/////sd_card_insert_drv();
-		in_drv();
-		in_an();
+		//in_drv();
+		//in_an();
 		volume_drv();
 		}
 	if (b10Hz) 

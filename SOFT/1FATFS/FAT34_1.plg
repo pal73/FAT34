@@ -7,3 +7,2546 @@ E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\FAT34_1.uvproj
 Project File Date:  02/02/2015
 
 <h2>Output:</h2>
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1255): warning:  #188-D: enumerated type mixed with another type
+main.c(1528): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14264 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1255): warning:  #188-D: enumerated type mixed with another type
+main.c(1528): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14264 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1262): warning:  #188-D: enumerated type mixed with another type
+main.c(1535): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14352 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1262): warning:  #188-D: enumerated type mixed with another type
+main.c(1535): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14076 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1262): warning:  #188-D: enumerated type mixed with another type
+main.c(1535): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14076 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1262): warning:  #188-D: enumerated type mixed with another type
+main.c(1535): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14336 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1262): warning:  #188-D: enumerated type mixed with another type
+main.c(1535): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14340 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1262): warning:  #188-D: enumerated type mixed with another type
+main.c(1535): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14340 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1255): warning:  #188-D: enumerated type mixed with another type
+main.c(1528): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14272 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1116): error:  #20: identifier "butE_" is undefined
+main.c(1263): warning:  #188-D: enumerated type mixed with another type
+main.c(1536): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+Target not created
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1264): warning:  #188-D: enumerated type mixed with another type
+main.c(1537): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14660 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(196): warning:  #177-D: variable "n" was declared but never referenced
+main.c(196): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1265): warning:  #188-D: enumerated type mixed with another type
+main.c(1473): warning:  #127-D: expected a statement
+main.c(1538): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14384 RO-data=360 RW-data=288 ZI-data=3792  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 9 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1267): warning:  #188-D: enumerated type mixed with another type
+main.c(1540): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14440 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1267): warning:  #188-D: enumerated type mixed with another type
+main.c(1540): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14440 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1269): warning:  #188-D: enumerated type mixed with another type
+main.c(1542): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14428 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1270): warning:  #188-D: enumerated type mixed with another type
+main.c(1543): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14448 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1270): warning:  #188-D: enumerated type mixed with another type
+main.c(1543): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14436 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1270): warning:  #188-D: enumerated type mixed with another type
+main.c(1543): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14448 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1280): warning:  #188-D: enumerated type mixed with another type
+main.c(1553): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14516 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1254): error:  #18: expected a ")"
+main.c(1280): warning:  #188-D: enumerated type mixed with another type
+main.c(1553): warning:  #223-D: function "disk_timerproc" declared implicitly
+main.c - 1 Error(s), 5 Warning(s).
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1254): error:  #18: expected a ")"
+main.c(1280): warning:  #188-D: enumerated type mixed with another type
+main.c(1553): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+Target not created
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1280): warning:  #188-D: enumerated type mixed with another type
+main.c(1553): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14516 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1280): warning:  #188-D: enumerated type mixed with another type
+main.c(1553): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14516 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1280): warning:  #188-D: enumerated type mixed with another type
+main.c(1553): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14440 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1280): warning:  #188-D: enumerated type mixed with another type
+main.c(1553): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14440 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1280): warning:  #188-D: enumerated type mixed with another type
+main.c(1553): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14516 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1290): warning:  #188-D: enumerated type mixed with another type
+main.c(1563): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14600 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1286): warning:  #188-D: enumerated type mixed with another type
+main.c(1559): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14532 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1286): warning:  #188-D: enumerated type mixed with another type
+main.c(1559): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14528 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1286): warning:  #188-D: enumerated type mixed with another type
+main.c(1559): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14460 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1286): warning:  #188-D: enumerated type mixed with another type
+main.c(1559): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=14388 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1286): warning:  #188-D: enumerated type mixed with another type
+main.c(1549): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13488 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1286): warning:  #188-D: enumerated type mixed with another type
+main.c(1549): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13476 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1286): warning:  #188-D: enumerated type mixed with another type
+main.c(1549): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13496 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1250): error:  #20: identifier "wrc_cnt" is undefined
+main.c(1296): warning:  #188-D: enumerated type mixed with another type
+main.c(1559): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+Target not created
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1296): warning:  #188-D: enumerated type mixed with another type
+main.c(1559): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13520 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(197): warning:  #177-D: variable "n" was declared but never referenced
+main.c(197): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1300): warning:  #188-D: enumerated type mixed with another type
+main.c(1563): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13444 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(198): warning:  #177-D: variable "n" was declared but never referenced
+main.c(198): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1303): warning:  #188-D: enumerated type mixed with another type
+main.c(1566): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13480 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(198): warning:  #177-D: variable "n" was declared but never referenced
+main.c(198): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1304): warning:  #188-D: enumerated type mixed with another type
+main.c(1567): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13488 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(198): warning:  #177-D: variable "n" was declared but never referenced
+main.c(198): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1305): warning:  #188-D: enumerated type mixed with another type
+main.c(1568): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13492 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Release'
+assembling STM32F10x.s...
+compiling STM32_Init.c...
+compiling main.c...
+main.c(112): warning:  #188-D: enumerated type mixed with another type
+main.c(198): warning:  #177-D: variable "n" was declared but never referenced
+main.c(198): warning:  #177-D: variable "r1" was declared but never referenced
+main.c(1305): warning:  #188-D: enumerated type mixed with another type
+main.c(1568): warning:  #223-D: function "disk_timerproc" declared implicitly
+compiling common_func.c...
+compiling 24c01.c...
+compiling i2c.c...
+compiling SPI_STM32F103.c...
+compiling lcd_pal_4_2.c...
+compiling ruslcd.c...
+compiling gran.c...
+compiling ff.c...
+compiling mmc_32f1.c...
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #61-D: integer operation result is out of range
+FAT\mmc_32f1.c(136): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+Program Size: Code=13476 RO-data=360 RW-data=292 ZI-data=3796  
+FromELF: creating hex file...
+"FAT34_1.axf" - 0 Error(s), 8 Warning(s).
+Load "E:\\Users\\Pal\\DEVICES\\FAT34_dev\\SOFT\\1FATFS\\FAT34_1.AXF" 
+Set JLink Project File to "E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Sep 22 2011 16:23:23
+Hardware: V8.00
+S/N : 58001139 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F100R4
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
