@@ -131,7 +131,7 @@ extern signed short volume_period_cnt_max;
 //extern signed short demo_per;
 //extern signed short demo_len;
 extern signed short current_sound;
-extern signed short wrk_cnt;
+extern signed short wrk_cnt,wrk_cnt_up;
 extern signed short max_file;
 extern signed short current_file;
 extern signed short current_demo_file;

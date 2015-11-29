@@ -118,7 +118,7 @@ signed short volume_period_cnt_max=100;
 //signed short demo_per;
 //signed short demo_len;
 signed short current_sound;
-signed short wrk_cnt;
+signed short wrk_cnt,wrk_cnt_up;
 signed short max_file;
 signed short current_file;
 signed short current_demo_file;
@@ -360,14 +360,27 @@ GPIOA->CRL|=0x00002000;
 if(wrk_cnt)
 	{
 	wrk_cnt--;
-	GPIOA->ODR|=1<<3;
-	main_demo_cnt=0;
+	wrk_cnt_up++;
 	}
-else
+if((wrk_cnt_up<100)||(wrk_cnt==0))
 	{
 	GPIOA->ODR&=~(1<<3);
 	}
+else if((wrk_cnt_up>100)&&(wrk_cnt))
+	{
+	GPIOA->ODR|=1<<3;
+	}
 
+if(wrk_cnt_up==100)
+	{
+	music_stop();
+	music_start(2,MAIN_TIME,0,5,100,0,10);
+	}
+if(wrk_cnt==1)
+	{
+	music_stop();
+	music_start(3,18,0,5,100,0,10);
+	}
 
 if(wrk_cnt==((MAIN_TIME-5)*10))
 	{
@@ -464,12 +477,12 @@ if(bIN)
 	{
 	bIN=0;
 
-	wrk_cnt= MAIN_TIME*10;
-	current_file++;
-	gran_ring(&current_file,1,NUM_OF_FILES);
-	music_start(current_file,MAIN_TIME+10,1,5,MAIN_VOLUME,1,10);
+	wrk_cnt= MAIN_TIME*10+98;
+	//current_file=1;
+	//gran_ring(&current_file,1,NUM_OF_FILES);
+	music_start(1,10,0,5,100,0,10);
 	//ind=iMn;
-	
+	wrk_cnt_up=0;
 
 	}
 
@@ -976,9 +989,10 @@ if(ind==iMn)
 	int2lcdyx(sound_buffer_,0,15,0);
 	int2lcdyx(current_demo_file,0,2,0);
 
-	int2lcdyx(main_demo_cnt,0,5,0);
+	int2lcdyx(main_demo_cnt,0,5,0);	*/
 
-	int2lcdyx(current_file,1,2,0); */
+	//int2lcdyx(wrk_cnt,1,2,0); 
+	//int2lcdyx(wrk_cnt_up,0,2,0);
 	}
 else if (ind==iSet)
 	{
@@ -1740,10 +1754,10 @@ while (1)
  		/**/_24c01_read_nbyte(EE_MAIN_TIME,(char*)&MAIN_TIME,12);
 		//
 
-		/**/demo_hndl();
+		/**///demo_hndl();
 		/////plazma_cnt++;
 
-
+		main_cnt++;
 		}
 		
 	if(bB)
