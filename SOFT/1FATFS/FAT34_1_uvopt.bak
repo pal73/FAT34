@@ -456,10 +456,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>3</ColumnNumber>
+      <ColumnNumber>2</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>971</TopLine>
-      <CurrentLine>995</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -627,8 +627,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\main.h</PathWithFilename>
-    <TopLine>134</TopLine>
-    <CurrentLine>134</CurrentLine>
+    <TopLine>1</TopLine>
+    <CurrentLine>33</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -653,7 +653,7 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\FAT\diskio.h</PathWithFilename>
-    <TopLine>37</TopLine>
+    <TopLine>1</TopLine>
     <CurrentLine>49</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -687,14 +687,14 @@
         <Doc>
           <Name>FAT\diskio.h</Name>
           <ColumnNumber>8</ColumnNumber>
-          <TopLine>37</TopLine>
+          <TopLine>1</TopLine>
           <CurrentLine>49</CurrentLine>
         </Doc>
         <Doc>
           <Name>main.h</Name>
-          <ColumnNumber>38</ColumnNumber>
-          <TopLine>134</TopLine>
-          <CurrentLine>134</CurrentLine>
+          <ColumnNumber>26</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>33</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\FAT\mmc_32f1.c</Name>
@@ -716,9 +716,9 @@
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>3</ColumnNumber>
-          <TopLine>971</TopLine>
-          <CurrentLine>995</CurrentLine>
+          <ColumnNumber>2</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

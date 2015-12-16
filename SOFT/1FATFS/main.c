@@ -52,8 +52,8 @@ char but0_cnt;
 char but1_cnt;
 char but_onL_temp;
 char speed,l_but,n_but;
-char in_drv_cnt,in_stop_drv_cnt;
-char bIN,bIN_STOP;
+char in_drv_cnt,in_step_drv_cnt;
+char bIN,bIN_STEP;
 
 //**********************************************
 //Коэффициенты, отображаемые из ЕЕПРОМ
@@ -458,18 +458,18 @@ else
 
 if(!(GPIOB->IDR&(1<<12)))
 	{
-	if(in_stop_drv_cnt<10)
+	if(in_step_drv_cnt<10)
 		{
-		in_stop_drv_cnt++;
-		if(in_stop_drv_cnt>=10)
+		in_step_drv_cnt++;
+		if(in_step_drv_cnt>=10)
 			{
-			bIN_STOP=1;
+			bIN_STEP=1;
 			}
 		}
 	}
 else 
 	{
-	in_stop_drv_cnt=0;
+	in_step_drv_cnt=0;
 	}
 
 }
@@ -478,7 +478,7 @@ else
 //-----------------------------------------------
 void in_an(void)
 {
-if(bIN)
+/*if(bIN)
 	{
 	bIN=0;
 
@@ -489,15 +489,35 @@ if(bIN)
 	//ind=iMn;
 	wrk_cnt_up=0;
 
-	}
+	} */
 
-if(bIN_STOP)
+if(bIN_STEP)
 	{
-	bIN_STOP=0;
+	bIN_STEP=0;
 
-	wrk_cnt=0;
-	music_stop();
+	if(wrk_cnt==0)
+		{
+		wrk_cnt_up=0;
+		bWRK=0;
+		music_stop();
+		}
+
+/*	wrk_cnt=0;
+	music_stop();*/
 	}
+
+
+/*
+if(but==(short)butSTEP)
+	{
+	if(wrk_cnt==0)
+		{
+		wrk_cnt_up=0;
+		bWRK=0;
+		music_stop();
+		}
+	} */
+
 }
 
 //-----------------------------------------------
@@ -995,9 +1015,9 @@ if(ind==iMn)
 	int2lcdyx(current_demo_file,0,2,0);
 
 	int2lcdyx(main_demo_cnt,0,5,0);	*/
-
-	//int2lcdyx(wrk_cnt,1,2,0); 
 	//int2lcdyx(wrk_cnt_up,0,2,0);
+	//int2lcdyx(wrk_cnt,1,2,0); 
+
 	}
 else if (ind==iSet)
 	{
@@ -1132,8 +1152,8 @@ else if (ind==iDeb)
 #define butUD_  65280+122
 #define butLR   65280+207
 #define butLR_   65280+79
-#define butSTART   65279L
-#define butSTOP   65151L
+#define butSTART  65151L 
+#define butSTOP   65279L
 #define butSTEP   65023L
 //int2lcdyx(plazma_but,0,4,0);
 //int2lcdyx(but,0,10,0);
@@ -1163,7 +1183,7 @@ but_n=(GPIOB->IDR)|0xfffffff8; 	//	FAT34
 but_n&=(GPIOC->IDR)|0xffffffCf;
 
 if(!(GPIOB->IDR&(1<<11)))but_n&=~(1<<8);
-if(!(GPIOB->IDR&(1<<12)))but_n&=~(1<<9);
+//if(!(GPIOB->IDR&(1<<12)))but_n&=~(1<<9);
 
 if((but_n==0xffffffffUL)||(but_n!=but_s))
  	{
@@ -1249,6 +1269,7 @@ if(!n_but)goto but_an_end;
 
 plazma_but++;
 
+/*
 if(but==(short)butSTEP)
 	{
 	if(wrk_cnt==0)
@@ -1257,7 +1278,7 @@ if(but==(short)butSTEP)
 		bWRK=0;
 		music_stop();
 		}
-	}
+	}  */
 
 if(but==butUD)
 	{
@@ -1281,9 +1302,9 @@ if(ind==iMn)
 	if(but==(short)butSTOP)
 		{
 		bWRK=0;
-		wrk_cnt_up=0;
+		//wrk_cnt_up=0;
 		wrk_cnt=0;
-		music_stop();
+		//music_stop();
 		}
 	if(but==(short)butE_)
 		{
@@ -1757,8 +1778,8 @@ while (1)
 		but_drv();
 		but_an();
 		/////sd_card_insert_drv();
-		//in_drv();
-		//in_an();
+		in_drv();
+		in_an();
 		volume_drv();
 		}
 	if (b10Hz) 
