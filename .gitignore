@@ -1,2 +1,8 @@
 /SOUNDS
 *.o
+/SOFT/1FATFS/FAT34_1.uvgui_PAL.bak
+/SOFT/1FATFS/*.uvopt
+/SOFT/1FATFS/*.dep
+/SOFT/1FATFS/*.bak
+/SOFT/1FATFS/*.plg
+/SOFT/1FATFS/*.PAL
