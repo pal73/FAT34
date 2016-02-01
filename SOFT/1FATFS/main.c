@@ -52,8 +52,8 @@ char but0_cnt;
 char but1_cnt;
 char but_onL_temp;
 char speed,l_but,n_but;
-char in_drv_cnt,in_step_drv_cnt;
-char bIN,bIN_STEP;
+char in_drv_cnt,in_step_drv_cnt,in_stop_drv_cnt;
+char bIN,bIN_STEP,bIN_STOP;
 
 //**********************************************
 //Коэффициенты, отображаемые из ЕЕПРОМ
@@ -433,8 +433,123 @@ else main_demo_cnt=0;
 }
 
 
+
 //-----------------------------------------------
 void in_drv(void)
+{
+GPIOB->CRH&=~0x000fff00;
+GPIOB->CRH|=0x00088800;
+GPIOB->ODR|=(1<<11)|(1<<12)|(1<<10);
+
+if(!(GPIOB->IDR&(1<<11)))
+	{
+	if(in_drv_cnt<10)
+		{
+		in_drv_cnt++;
+		if(in_drv_cnt>=10)
+			{
+			bIN=1;
+			}
+		}
+	}
+else 
+	{
+	in_drv_cnt=0;
+	}
+
+if(!(GPIOB->IDR&(1<<12)))
+	{
+	if(in_stop_drv_cnt<10)
+		{
+		in_stop_drv_cnt++;
+		if(in_stop_drv_cnt>=10)
+			{
+			bIN_STOP=1;
+			}
+		}
+	}
+else 
+	{
+	in_stop_drv_cnt=0;
+	}
+
+if(!(GPIOB->IDR&(1<<10)))
+	{
+	if(in_step_drv_cnt<10)
+		{
+		in_step_drv_cnt++;
+		if(in_step_drv_cnt>=10)
+			{
+			bIN_STEP=1;
+			}
+		}
+	}
+else 
+	{
+	in_step_drv_cnt=0;
+	}
+
+
+}
+
+
+//-----------------------------------------------
+void in_an(void)
+{
+if(bIN)
+	{
+	bIN=0;
+	/*
+	wrk_cnt= MAIN_TIME*10;
+	current_file++;
+	gran_ring(&current_file,1,NUM_OF_FILES);
+	music_start(current_file,MAIN_TIME+10,1,5,MAIN_VOLUME,1,10);
+	//ind=iMn;*/
+
+
+
+	if(!bWRK)
+		{
+		wrk_cnt= MAIN_TIME*10;
+		current_file++;
+		gran_ring(&current_file,1,NUM_OF_FILES);
+		//music_start(1,10,0,5,100,0,10);
+		music_start(current_file,MAIN_TIME+100,0,5,100,0,10);
+		//ind=iMn;
+		wrk_cnt_up=0;
+		bWRK=1;
+		}	
+
+	}
+
+if(bIN_STOP)
+	{
+	bIN_STOP=0;
+
+		bWRK=0;
+		//wrk_cnt_up=0;
+		wrk_cnt=0;
+		//music_stop();
+	}
+if(bIN_STEP)
+	{
+	bIN_STEP=0;
+
+	if(wrk_cnt==0)
+		{
+		wrk_cnt_up=0;
+		bWRK=0;
+		music_stop();
+		}
+
+/*	wrk_cnt=0;
+	music_stop();*/
+	}
+}
+
+
+//-----------------------------------------------
+void in_drv_(void)
 {
 GPIOB->CRH&=~0x000ff000;
 GPIOB->CRH|=0x00088000;
@@ -476,7 +591,7 @@ else
 
 
 //-----------------------------------------------
-void in_an(void)
+void in_an_(void)
 {
 /*if(bIN)
 	{
@@ -1028,13 +1143,13 @@ else if (ind==iSet)
 	ptrs[4]	=" Длительность   ";
 	ptrs[5]	=" демоигры %м0^с ";
 	ptrs[6]	=" Громкость      ";
-	ptrs[7]	=" звука       )  ";
-	ptrs[8]	=" Количество     ";
-	ptrs[9]	=" файлов      (  "; */
-	ptrs[2]	=" Счетчик        ";
-	ptrs[3]	=" сеансов        "; 
-	ptrs[4]	=" Выход          ";
-	ptrs[5]	="                ";
+	ptrs[7]	=" звука       )  "; */
+	ptrs[2]	=" Количество     ";
+	ptrs[3]	=" файлов      (  "; 
+	ptrs[4]	=" Счетчик        ";
+	ptrs[5]	=" сеансов        "; 
+	ptrs[6]	=" Выход          ";
+	ptrs[7]	="                ";
 
 	bgnd_par(ptrs[sub_ind*2],ptrs[sub_ind*2+1]);
 
@@ -1182,7 +1297,7 @@ but_n=(GPIOB->IDR)|0xfffffff8; 	//	FAT34
 //but_n=(GPIOB->IDR)|0xfffffffc;	//	STM32VLDISVOVERY
 but_n&=(GPIOC->IDR)|0xffffffCf;
 
-if(!(GPIOB->IDR&(1<<11)))but_n&=~(1<<8);
+//if(!(GPIOB->IDR&(1<<11)))but_n&=~(1<<8);
 //if(!(GPIOB->IDR&(1<<12)))but_n&=~(1<<9);
 
 if((but_n==0xffffffffUL)||(but_n!=but_s))
@@ -1251,10 +1366,10 @@ plazma_long=GPIOB->ODR;
 GPIOC->CRL &= ~0x00FF0000;
 GPIOC->CRL |=  0x00880000;
 GPIOC->ODR |=  0x00000030;
-
+/*
 GPIOB->CRH&=~0x000ff000;
 GPIOB->CRH|=0x00088000;
-GPIOB->ODR|=(1<<11)|(1<<12);
+GPIOB->ODR|=(1<<11)|(1<<12); */
 
 }
 
@@ -1288,7 +1403,7 @@ if(but==butUD)
 
 if(ind==iMn)
 	{
-	if((but==(short)butSTART)&&(!bWRK))
+/*	if((but==(short)butSTART)&&(!bWRK))
 		{
 		wrk_cnt= MAIN_TIME*10;
 		//current_file=1;
@@ -1298,14 +1413,14 @@ if(ind==iMn)
 		//ind=iMn;
 		wrk_cnt_up=0;
 		bWRK=1;
-		}
-	if(but==(short)butSTOP)
+		} */
+/*	if(but==(short)butSTOP)
 		{
 		bWRK=0;
 		//wrk_cnt_up=0;
 		wrk_cnt=0;
 		//music_stop();
-		}
+		}*/
 	if(but==(short)butE_)
 		{
 		tree_up(iSet,0,0,0);
@@ -1336,13 +1451,13 @@ else if(ind==iSet)
 	{ 
      if(but==(short)butU)
      	{
-    		sub_ind--;
-     	gran_char(&sub_ind,0,2);
+    	sub_ind--;
+     	gran_char(&sub_ind,0,4);
      	}
  	else if(but==(short)butD)
      	{
      	sub_ind++;
-     	gran_char(&sub_ind,0,2);
+     	gran_char(&sub_ind,0,4);
      	} 
      else if(but==(short)butD_)
      	{
@@ -1442,27 +1557,27 @@ else if(ind==iSet)
 			_24c01_write_2byte(EE_MAIN_VOLUME,MAIN_VOLUME);
 			}
 		speed=1;
-		}
-	else if(sub_ind==4)
+		}*/
+	else if(sub_ind==1)
 		{
-		if((but==butR)||(but==butR_))
+		if((but==(short)butR)||(but==(short)butR_))
 			{
 			NUM_OF_FILES++;
 			gran(&NUM_OF_FILES,1,20);
 			_24c01_write_2byte(EE_NUM_OF_FILES,NUM_OF_FILES);
 			}
-		else if((but==butL)||(but==butL_))
+		else if((but==(short)butL)||(but==(short)butL_))
 			{
 			NUM_OF_FILES--;
 			gran(&NUM_OF_FILES,1,20);
 			_24c01_write_2byte(EE_NUM_OF_FILES,NUM_OF_FILES);
 			}
-		}*/
-	else if(sub_ind==1)
+		}
+	else if(sub_ind==2)
 		{
 		if(but==(short)butE_)tree_up(iFisk_prl,0,0,0);
 		}
-	else if(sub_ind==2)
+	else if(sub_ind==3)
 		{
 		if(but==(short)butE_)tree_down(0,0);
 		}														
@@ -1623,7 +1738,7 @@ if(++short_time_cnt>=441)
 		if(bFL)bFL=0;
 		else bFL=1;
 		}
-    	}
+    }
 } 
 
 
@@ -1655,6 +1770,7 @@ _24c01_read_nbyte(EE_MAIN_TIME,(char*)&MAIN_TIME,12);
 
 //Timer1=10000;
 //Timer2=1000;
+//current_file=2;
 while (1) 
 	{
 //#ifdef OLDSDCARD
