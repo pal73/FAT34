@@ -600,6 +600,32 @@
   </Group>
 
   <AlienFiles>
+    <PathWithFilename>C:\Documents and Settings\PAL\Рабочий стол\111.c</PathWithFilename>
+    <TopLine>444</TopLine>
+    <CurrentLine>468</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\FAT\ff.h</PathWithFilename>
     <TopLine>176</TopLine>
     <CurrentLine>181</CurrentLine>
@@ -677,32 +703,6 @@
     </WindowPosition>
   </AlienFiles>
 
-  <AlienFiles>
-    <PathWithFilename>C:\Documents and Settings\PAL\Рабочий стол\111.c</PathWithFilename>
-    <TopLine>442</TopLine>
-    <CurrentLine>468</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
   <MDIGroups>
     <Orientation>1</Orientation>
     <ActiveMDIGroup>0</ActiveMDIGroup>
@@ -749,7 +749,7 @@
         <Doc>
           <Name>C:\Documents and Settings\PAL\Рабочий стол\111.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>442</TopLine>
+          <TopLine>444</TopLine>
           <CurrentLine>468</CurrentLine>
         </Doc>
       </Documents>
