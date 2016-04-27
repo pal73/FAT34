@@ -22,7 +22,7 @@
 ### ADS-LD Output File: 'FAT34_1.axf'
 ### ADS-LD Command File: 'FAT34_1.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'FAT34_1.lnp', Handle=0x00000588
+### Creating CmdFile 'FAT34_1.lnp', Handle=0x000007AC
 ### Writing '.lnp' file
 ### ADS-LD Command file 'FAT34_1.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

@@ -143,6 +143,8 @@ UINT Timer1, Timer2;
 char bB;
 UINT readed_bytes;
 
+short delayOfStartCnt;
+
 /*----------------------------------------------------------------------------
  *        Initialize On Board LCD Module
  *---------------------------------------------------------------------------*/
@@ -165,6 +167,32 @@ temp=5*del;
 
 while (--temp);
 return;
+}
+
+//-----------------------------------------------
+void delayOfStartHndl(void)
+{
+if(delayOfStartCnt)
+	{
+	delayOfStartCnt--;
+	if(!delayOfStartCnt)
+		{
+		wrk_cnt= MAIN_TIME*10;
+		current_file++;
+		gran_ring(&current_file,1,NUM_OF_FILES);
+		//music_start(1,10,0,5,100,0,10);
+		music_start(current_file,MAIN_TIME+100,0,5,100,0,10);
+		//ind=iMn;
+		wrk_cnt_up=0;
+		bWRK=1;
+		}
+	}
+}
+
+//-----------------------------------------------
+void delayOfStart(char in)
+{
+delayOfStartCnt=(short)in*10;
 }
 
 //-----------------------------------------------
@@ -510,14 +538,16 @@ if(bIN)
 
 	if(!bWRK)
 		{
-		wrk_cnt= MAIN_TIME*10;
-		current_file++;
-		gran_ring(&current_file,1,NUM_OF_FILES);
+		//wrk_cnt= MAIN_TIME*10;
+		//current_file++;
+		//gran_ring(&current_file,1,NUM_OF_FILES);
 		//music_start(1,10,0,5,100,0,10);
-		music_start(current_file,MAIN_TIME+100,0,5,100,0,10);
+		music_start(0,7,0,0,100,0,0);
+		delayOfStart(7);
+		//music_start(current_file,MAIN_TIME+100,0,5,100,0,10);
 		//ind=iMn;
-		wrk_cnt_up=0;
-		bWRK=1;
+		//wrk_cnt_up=0;
+		//bWRK=1;
 		}	
 
 	}
@@ -1915,6 +1945,7 @@ while (1)
 
 		wrk_drv();
 		music_hndl();
+		delayOfStartHndl();
 		}   
 	if (b5Hz) 
 		{

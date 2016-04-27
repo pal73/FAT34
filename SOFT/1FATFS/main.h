@@ -170,6 +170,14 @@ unsigned char SD_Read1024Bytes(unsigned long adr, char* ptr);
 void ret(char duty);
 //-----------------------------------------------
 void ret_hndl(void);
+//-----------------------------------------------
+void music_start(	signed short file_num__,
+				signed short time_in_sec__,
+				char fade_in__,
+				char time_fade_in__,
+				char volume__,
+				char fade_out__,
+				char fade_out_time__);
 /*----------------------------------------------------------------------------
  * end of file
  *---------------------------------------------------------------------------*/
