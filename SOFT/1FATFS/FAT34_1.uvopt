@@ -112,7 +112,7 @@
         <tRbox>1</tRbox>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
-        <nTsel>7</nTsel>
+        <nTsel>8</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -123,7 +123,7 @@
         <tDlgDll></tDlgDll>
         <tDlgPa></tDlgPa>
         <tIfile></tIfile>
-        <pMon>Segger\JL2CM3.dll</pMon>
+        <pMon>STLink\ST-LINKIII-KEIL.dll</pMon>
       </DebugOpt>
       <TargetDriverDllRegistry>
         <SetRegEntry>
@@ -149,7 +149,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>ST-LINKIII-KEIL</Key>
-          <Name></Name>
+          <Name>-S</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -166,24 +166,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>1705</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
           <LineNumber>2405</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134229182</Address>
+          <Address>134229530</Address>
           <ByteObject>0</ByteObject>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
@@ -194,11 +179,11 @@
           <Expression>\\FAT34_1\ff\2405</Expression>
         </Bp>
         <Bp>
-          <Number>2</Number>
+          <Number>1</Number>
           <Type>0</Type>
           <LineNumber>2229</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134228426</Address>
+          <Address>134228774</Address>
           <ByteObject>0</ByteObject>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
@@ -456,10 +441,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>4</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>529</TopLine>
-      <CurrentLine>550</CurrentLine>
+      <TopLine>1773</TopLine>
+      <CurrentLine>1784</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -653,7 +638,7 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\main.h</PathWithFilename>
-    <TopLine>129</TopLine>
+    <TopLine>156</TopLine>
     <CurrentLine>180</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -679,8 +664,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\FAT\diskio.h</PathWithFilename>
-    <TopLine>54</TopLine>
-    <CurrentLine>54</CurrentLine>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -708,18 +693,18 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>5</ActiveTab>
       <Documents>
         <Doc>
           <Name>FAT\diskio.h</Name>
           <ColumnNumber>8</ColumnNumber>
-          <TopLine>54</TopLine>
-          <CurrentLine>54</CurrentLine>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>main.h</Name>
           <ColumnNumber>26</ColumnNumber>
-          <TopLine>129</TopLine>
+          <TopLine>156</TopLine>
           <CurrentLine>180</CurrentLine>
         </Doc>
         <Doc>
@@ -742,9 +727,9 @@
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>4</ColumnNumber>
-          <TopLine>529</TopLine>
-          <CurrentLine>550</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1773</TopLine>
+          <CurrentLine>1784</CurrentLine>
         </Doc>
         <Doc>
           <Name>C:\Documents and Settings\PAL\Рабочий стол\111.c</Name>

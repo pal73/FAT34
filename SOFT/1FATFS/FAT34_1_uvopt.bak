@@ -456,10 +456,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>16</ColumnNumber>
+      <ColumnNumber>4</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>492</TopLine>
-      <CurrentLine>514</CurrentLine>
+      <TopLine>529</TopLine>
+      <CurrentLine>550</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -653,8 +653,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\main.h</PathWithFilename>
-    <TopLine>9</TopLine>
-    <CurrentLine>33</CurrentLine>
+    <TopLine>129</TopLine>
+    <CurrentLine>180</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -679,8 +679,8 @@
 
   <AlienFiles>
     <PathWithFilename>E:\Users\Pal\DEVICES\FAT34_dev\SOFT\1FATFS\FAT\diskio.h</PathWithFilename>
-    <TopLine>25</TopLine>
-    <CurrentLine>49</CurrentLine>
+    <TopLine>54</TopLine>
+    <CurrentLine>54</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -713,14 +713,14 @@
         <Doc>
           <Name>FAT\diskio.h</Name>
           <ColumnNumber>8</ColumnNumber>
-          <TopLine>25</TopLine>
-          <CurrentLine>49</CurrentLine>
+          <TopLine>54</TopLine>
+          <CurrentLine>54</CurrentLine>
         </Doc>
         <Doc>
           <Name>main.h</Name>
           <ColumnNumber>26</ColumnNumber>
-          <TopLine>9</TopLine>
-          <CurrentLine>33</CurrentLine>
+          <TopLine>129</TopLine>
+          <CurrentLine>180</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\FAT\mmc_32f1.c</Name>
@@ -742,9 +742,9 @@
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>16</ColumnNumber>
-          <TopLine>492</TopLine>
-          <CurrentLine>514</CurrentLine>
+          <ColumnNumber>4</ColumnNumber>
+          <TopLine>529</TopLine>
+          <CurrentLine>550</CurrentLine>
         </Doc>
         <Doc>
           <Name>C:\Documents and Settings\PAL\Рабочий стол\111.c</Name>
