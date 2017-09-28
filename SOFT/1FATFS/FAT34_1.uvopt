@@ -121,6 +121,16 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>DLGUARM</Key>
+          <Name>(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>JL2CM3</Key>
+          <Name>-U58001139 -O14 -S0 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight JTAG-DP") -D00(3BA00477) -L00(4) -N01("Unknown JTAG device") -D01(06420041) -L01(5) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_16 -FS08000000 -FL04000</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>DLGTARM</Key>
           <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
@@ -343,8 +353,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1553</TopLine>
-      <CurrentLine>1564</CurrentLine>
+      <TopLine>1773</TopLine>
+      <CurrentLine>1784</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -460,10 +470,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>2743</TopLine>
-      <CurrentLine>2743</CurrentLine>
+      <TopLine>2170</TopLine>
+      <CurrentLine>2170</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\FAT\ff.c</PathWithFileName>
       <FilenameWithoutPath>ff.c</FilenameWithoutPath>
@@ -476,8 +486,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>543</TopLine>
+      <CurrentLine>543</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\FAT\mmc_32f1.c</PathWithFileName>
       <FilenameWithoutPath>mmc_32f1.c</FilenameWithoutPath>
@@ -499,9 +509,15 @@
         </Doc>
         <Doc>
           <Name>.\FAT\ff.c</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>2743</TopLine>
-          <CurrentLine>2743</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>2170</TopLine>
+          <CurrentLine>2170</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\FAT\mmc_32f1.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>543</TopLine>
+          <CurrentLine>543</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
