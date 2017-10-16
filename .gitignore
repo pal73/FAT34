@@ -1,1 +1,7 @@
 /SOUNDS
+*.o
+*.d
+*.crf
+/SOFT/F030/Flash/*.htm
+/SOFT/1FATFS/FAT34_1.build_log.htm
+/SOFT/F030/Abstract.txt

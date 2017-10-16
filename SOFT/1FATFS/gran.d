@@ -1,1 +1,1 @@
-gran.o: gran.c
+.\gran.o: gran.c

@@ -1,1 +1,1 @@
-ruslcd.o: ruslcd.c
+.\ruslcd.o: ruslcd.c

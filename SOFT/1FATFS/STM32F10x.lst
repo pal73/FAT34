@@ -443,9 +443,9 @@ ARM Macro Assembler    Page 7
               00000000 
               00000200 
               00000000 
-Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=STM32F10
-x.d -oSTM32F10x.o -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\INC\ST\STM32F10x --
-list=STM32F10x.lst STM32F10x.s
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\stm32f
+10x.d -o.\stm32f10x.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\K
+eil\ARM\Inc\ST\STM32F10x --list=.\stm32f10x.lst STM32F10x.s
 
 
 
@@ -1145,4 +1145,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 2 symbols
-396 symbols in table
+403 symbols in table
