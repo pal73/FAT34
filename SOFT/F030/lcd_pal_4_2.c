@@ -90,7 +90,7 @@ for(i=16;i<32;i++)
 
 
 char temp,i;
-
+LCD_ALL_DIR_OUT
 i=0;
 
 set_cursor (0, 0);

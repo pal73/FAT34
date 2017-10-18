@@ -438,6 +438,16 @@
               <FileType>1</FileType>
               <FilePath>.\common_func.c</FilePath>
             </File>
+            <File>
+              <FileName>gran.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\gran.c</FilePath>
+            </File>
+            <File>
+              <FileName>eeprom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\eeprom.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -447,6 +457,116 @@
               <FileName>Abstract.txt</FileName>
               <FileType>5</FileType>
               <FilePath>.\Abstract.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STD</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32f0xx_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_cec.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_cec.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_comp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_comp.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dbgmcu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dbgmcu.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_iwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_iwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_syscfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_syscfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_wwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_wwdg.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -884,6 +1004,16 @@
               <FileType>1</FileType>
               <FilePath>.\common_func.c</FilePath>
             </File>
+            <File>
+              <FileName>gran.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\gran.c</FilePath>
+            </File>
+            <File>
+              <FileName>eeprom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\eeprom.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -896,6 +1026,116 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>STD</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32f0xx_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_cec.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_cec.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_comp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_comp.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dbgmcu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dbgmcu.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_iwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_iwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_syscfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_syscfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_wwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_wwdg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
     <Target>
@@ -904,13 +1144,13 @@
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32F051R8</Device>
+          <Device>STM32F030F4</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <Cpu>IRAM(0x20000000-0x20001FFF) IROM(0x8000000-0x800FFFF) CLOCK(8000000) CPUTYPE("Cortex-M0")</Cpu>
+          <Cpu>IRAM(0x20000000-0x20000FFF) IROM(0x8000000-0x8003FFF) CLOCK(8000000) CPUTYPE("Cortex-M0")</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
-          <StartupFile>"Startup\ST\STM32F0xx\startup_stm32f051.s" ("STM32F051 Startup Code")</StartupFile>
-          <FlashDriverDll>UL2CM3(-O207 -S0 -C0 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F0xx_64 -FS08000000 -FL010000)</FlashDriverDll>
-          <DeviceId>6188</DeviceId>
+          <StartupFile>"Startup\ST\STM32F0xx\startup_stm32f030.s" ("STM32F030 Startup Code")</StartupFile>
+          <FlashDriverDll>UL2CM3(-O207 -S0 -C0 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F0xx_16 -FS08000000 -FL04000)</FlashDriverDll>
+          <DeviceId>7305</DeviceId>
           <RegisterFile>stm32f0xx.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
@@ -918,10 +1158,10 @@
           <Linker></Linker>
           <OHString></OHString>
           <InfinionOptionDll></InfinionOptionDll>
-          <SLE66CMisc>-DSTM32F051</SLE66CMisc>
+          <SLE66CMisc>-DSTM32F030</SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>SFD\ST\STM32F0xx\STM32F0xx.sfr</SFDFile>
+          <SFDFile>SFD\ST\STM32F0xx\STM32F030.SFR</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -1061,7 +1301,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3>"" ()</Flash3>
+          <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -1166,12 +1406,12 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x2000</Size>
+                <Size>0x1000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x10000</Size>
+                <Size>0x4000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -1196,7 +1436,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x10000</Size>
+                <Size>0x3800</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -1221,7 +1461,7 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x2000</Size>
+                <Size>0x1000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -1233,7 +1473,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>3</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -1247,9 +1487,9 @@
             <uSurpInc>0</uSurpInc>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\STM32F0xx_StdPeriph_Driver\inc;.\STM32F0xx_StdPeriph_Driver\src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1330,6 +1570,16 @@
               <FileType>1</FileType>
               <FilePath>.\common_func.c</FilePath>
             </File>
+            <File>
+              <FileName>gran.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\gran.c</FilePath>
+            </File>
+            <File>
+              <FileName>eeprom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\eeprom.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1339,6 +1589,116 @@
               <FileName>Abstract.txt</FileName>
               <FileType>5</FileType>
               <FilePath>.\Abstract.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STD</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32f0xx_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_cec.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_cec.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_comp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_comp.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dbgmcu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dbgmcu.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_iwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_iwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_syscfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_syscfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_wwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_wwdg.c</FilePath>
             </File>
           </Files>
         </Group>

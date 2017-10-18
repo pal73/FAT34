@@ -1,4 +1,7 @@
 #define LCD_SIZE	40
+
+#define PAROL_FISK	753 
+
 //***********************************************
 //
 typedef enum {iMn,iSrv_sl,iFisk_prl,iSet,iFisk,iBps,iS2,iSet_prl,iK_prl,iDnd,iK,

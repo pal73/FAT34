@@ -19,6 +19,8 @@
 #include "lcd_pal_4_2.h"
 #include "ruslcd.h"
 #include "common_func.h"
+#include "gran.h"
+#include "eeprom.h"
 
 //***********************************************
 //Р’СЂРµРјСЏ
@@ -104,6 +106,16 @@ signed short NUM_OF_FILES;
 signed short MAIN_VOLUME;
 signed short MAIN_CNT;
 
+//**********************************************
+//Работа с кнопками 
+char but;                            
+unsigned short but_n,but_s;
+char but0_cnt;
+char but1_cnt;
+char but_onL_temp;
+char speed,l_but,n_but;
+char in_drv_cnt,in_stop_drv_cnt;
+char bIN,bIN_STOP;
 
 //-----------------------------------------------
 //ФЇр ў«ж®ЁеЎўпІЇр®Ё§г¦¤ж®Ёж¬ с™ЅЄт“ђЉ
@@ -128,6 +140,25 @@ char string4[]={0x63,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20
 char string5[]={0x63,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0x20,0};
 
 //-----------------------------------------------
+void ret(char duty)
+{
+ret_duty=duty;
+}
+
+//-----------------------------------------------
+void ret_hndl(void)
+{
+if(ret_duty)
+     {
+     ret_duty--;
+     if(!ret_duty)
+          {
+          tree_down(0,0);
+          }
+     }
+}
+
+//-----------------------------------------------
 void ind_hndl(void)
 {
 const char* ptrs[30];
@@ -137,15 +168,16 @@ if(ind==iMn)
 	if(!wrk_cnt)
 		{
 		bgnd_par(
-			string1,
-			string2
+			" Установленное  ",//string1,
+			" время   0!:0@  "//string2
 			/*" world  0!:0@ "*/);
 			
 			//lcd_buffer[1]=0xa7;
 
-		int2lcd(MAIN_TIME/60,'!',0);
-		int2lcd(MAIN_TIME%60,'@',0);
-
+		//int2lcd(MAIN_TIME/60,'!',0);
+		//int2lcd(MAIN_TIME%60,'@',0);
+		int2lcd(MAIN_TIME,'!',0);
+		//int2lcd(but,'@',0);
 		//fr=5;
 
 		/*int2lcdyx(fr,0,2,0);
@@ -153,21 +185,20 @@ if(ind==iMn)
 		int2lcdyx(b1,0,6,0);
 		int2lcdyx(b2,0,8,0);
 		int2lcdyx(audio_out_cnt,0,12,0);
-		int2lcdyx(bEND,0,14,0);*/
-
+		*/
+	//int2lcdyx(but_n,0,14,0);
 /*
 	=1; 
 	b2=1;
 	b1=1;
 	audio_out_cnt=250;
 	bEND=0;*/
-
 		}
 	else
 		{
 		bgnd_par(
-			"  Е® п«®оё о©ї  ",
-			" пІІб¬®сј °<:0> ");
+			"  До окончания  ",
+			" осталось 0<:0> ");
 
 		int2lcd((wrk_cnt/10)/60,'<',0);
 		int2lcd((wrk_cnt/10)%60,'>',0);
@@ -186,19 +217,19 @@ if(ind==iMn)
 	}
 else if (ind==iSet)
 	{
-	ptrs[0]	=" Е«йіҐмЅ­пІІр   ";
-	ptrs[1]	=" сҐ ­с    !м±Ђc ";	
-	ptrs[2]	=" РҐрЁ®¤йё­пІІр  ў";
-	ptrs[3]	=" е¦¬п©Јр» Ј";
-	ptrs[4]	=" Е«йіҐмЅ­пІІр   ";
-	ptrs[5]	=" е¦¬п©Јр» Ґ";
-	ptrs[6]	=" Д°п­ЄпІІр      ";
-	ptrs[7]	=" иЈіл        )  ";
-	ptrs[8]	=" Л®м©·жІІг®     ";
-	ptrs[9]	=" р ©«пў      (  "; 
-	ptrs[10]	=" Т·жі·йЄ        ";
-	ptrs[11]	=" сҐ ­с®ў        "; 
-	ptrs[12]	=" Г»с®¤          ";
+	ptrs[0]	=" Длительность   ";
+	ptrs[1]	=" сеанса   !м0@c ";	
+	ptrs[2]	=" Периодичность  ";
+	ptrs[3]	=" демоигры #м0$с ";
+	ptrs[4]	=" Длительность   ";
+	ptrs[5]	=" демоигры %м0^с ";
+	ptrs[6]	=" Громкость      ";
+	ptrs[7]	=" звука       )  ";
+	ptrs[8]	=" Количество     ";
+	ptrs[9]	=" файлов      (  "; 
+	ptrs[10]	=" Счетчик        ";
+	ptrs[11]	=" сеансов        "; 
+	ptrs[12]	=" Выход          ";
 	ptrs[13]	="                ";
 
 	bgnd_par(ptrs[sub_ind*2],ptrs[sub_ind*2+1]);
@@ -303,7 +334,331 @@ else if (ind==iDeb)
 		}
 	}
 //int2lcdyx(plazma1,0,6,0);
-//ruslcd((unsigned char*)lcd_buffer);
+ruslcd((unsigned char*)lcd_buffer);
+}
+
+#define BUT_ON 4
+#define BUT_ONL 20 
+
+#define butU   253
+#define butU_  125
+#define butD   251
+#define butD_  123
+#define butL   254
+#define butL_  126
+#define butR   239
+#define butR_  111
+#define butE   247
+#define butE_  119
+#define butEL_ 118
+#define butUD  249
+#define butUD_ 121
+#define butLR  238
+#define butLR_ 110
+
+//-----------------------------------------------
+void but_drv(void)
+{
+/* инициализация кнопок */
+RCC->AHBENR  |= ((1UL << 17) );
+GPIOA->MODER 	&= 	~((3UL << 2*0) | (3UL << 2*1) | (3UL << 2*2) | (3UL << 2*3)/* | (3UL << 2*9)*/ | (3UL << 2*10));      
+GPIOA->OSPEEDR &= 	~((3UL << 2*0) | (3UL << 2*1) | (3UL << 2*2) | (3UL << 2*3)/* | (3UL << 2*9)*/ | (3UL << 2*10));
+GPIOA->PUPDR   &= 	~((3UL << 2*0) | (3UL << 2*1) | (3UL << 2*2) | (3UL << 2*3)/* | (3UL << 2*9)*/ | (3UL << 2*10));
+GPIOA->PUPDR   |= 	 ((1UL << 2*0) | (1UL << 2*1) | (1UL << 2*2) | (1UL << 2*3)/* | (1UL << 2*9)*/ | (1UL << 2*10));	
+
+	
+but_n=(((GPIOA->IDR)|0xfff0)/*&0xffffffcf*/)&(((GPIOA->IDR)>>6)|0xffef); 	
+//but_n=(GPIOA->IDR);
+	
+if((but_n==0xffff)||(but_n!=but_s))
+ 	{
+ 	speed=0;
+ 
+   	if (((but0_cnt>=BUT_ON)||(but1_cnt!=0))&&(!l_but))
+  		{
+   	     n_but=1;
+          but=(char)but_s;
+
+          }
+   	if (but1_cnt>=but_onL_temp)
+  		{
+   	     n_but=1;
+ 
+          but=((char)but_s)&0x7f;
+          }
+    	l_but=0;
+   	but_onL_temp=BUT_ONL;
+    	but0_cnt=0;
+  	but1_cnt=0;          
+     goto but_drv_out;
+  	}
+else if(but_n==but_s)
+ 	{
+  	but0_cnt++;
+  	if(but0_cnt>=BUT_ON)
+  		{
+   		but0_cnt=0;
+   		but1_cnt++;
+   		if(but1_cnt>=but_onL_temp)
+   			{              
+    			but=(char)(but_s&0x7f);
+    			but1_cnt=0;
+    			n_but=1;
+    			     
+    			l_but=1;
+			if(speed)
+				{
+    				but_onL_temp=but_onL_temp>>1;
+        			if(but_onL_temp<=2) but_onL_temp=2;
+				}    
+   			}
+  		}
+ 	}
+but_drv_out: 
+but_s=but_n;
+	   
+}
+
+//-----------------------------------------------
+void but_an(void)
+{
+//signed short temp_SS;
+//signed short deep,i,cap,ptr;
+if(!n_but)goto but_an_end;
+
+if(but==butUD)
+	{
+	if(ind!=iDeb)ind=iDeb;
+	else ind=iMn;
+	}
+
+if(ind==iMn)
+	{
+	if(but==butE_)
+		{
+		tree_up(iSet,0,0,0);
+		}
+
+	if(but==butE)
+		{
+		//ee_24c01_write_2byte(30,read_adress);
+		}
+	if(but==butU)
+		{
+		}
+	if(but==butR)
+		{
+		}
+	if(but==butD)
+		{
+		///fr=10;
+		}
+	if(but==butL)
+		{
+		///music_start(1,MAIN_TIME+10,1,5,MAIN_VOLUME,1,10);
+	   //bB=1;
+		}
+
+	}
+else if(ind==iSet)
+	{ 
+     if(but==butU)
+     	{
+    		sub_ind--;
+     	gran_char(&sub_ind,0,6);
+     	}
+ 	else if(but==butD)
+     	{
+     	sub_ind++;
+     	gran_char(&sub_ind,0,6);
+     	} 
+     else if(but==butD_)
+     	{
+     	sub_ind=5;
+     	}
+	else if(sub_ind==0)
+		{
+		if(but==butR)
+			{
+			MAIN_TIME=(((MAIN_TIME/10)+1)*10);//MAIN_TIME++;
+			gran(&MAIN_TIME,30,300);
+			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			}
+		else if(but==butR_)
+			{
+			MAIN_TIME=(((MAIN_TIME/10)+1)*10);
+			gran(&MAIN_TIME,30,300);
+			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			}
+		else if(but==butL)
+			{
+			MAIN_TIME=(((MAIN_TIME/10)-1)*10);//MAIN_TIME--;
+			gran(&MAIN_TIME,30,300);
+			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			}
+		else if(but==butL_)
+			{
+			MAIN_TIME=(((MAIN_TIME/10)-1)*10);
+			gran(&MAIN_TIME,30,300);
+			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			}
+		//speed=1;
+
+		}
+
+	else if(sub_ind==1)
+		{
+		if(but==butR)
+			{
+			DEMO_PERIOD=(((DEMO_PERIOD/10)+1)*10);//DEMO_PERIOD++;
+			gran(&DEMO_PERIOD,0,300);
+			//ee_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
+			}
+		else if(but==butR_)
+			{
+			DEMO_PERIOD=(((DEMO_PERIOD/10)+1)*10);
+			gran(&DEMO_PERIOD,0,300);
+			//ee_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
+			}
+		else if(but==butL)
+			{
+			DEMO_PERIOD=(((DEMO_PERIOD/10)-1)*10);//DEMO_PERIOD--;
+			gran(&DEMO_PERIOD,0,300);
+			//ee_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
+			}
+		else if(but==butL_)
+			{
+			DEMO_PERIOD=(((DEMO_PERIOD/10)-1)*10);
+			gran(&DEMO_PERIOD,0,300);
+			//ee_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
+			}
+		//speed=1;
+
+		}
+	else if(sub_ind==2)
+		{
+		if((but==butR)||(but==butR_))
+			{
+			DEMO_TIME++;
+			gran(&DEMO_TIME,0,60);
+			//ee_24c01_write_2byte(EE_DEMO_TIME,DEMO_TIME);
+			}
+	/*	else if(but==butR_)
+			{
+			MAIN_TIME=(((MAIN_TIME/10)+1)*10);
+			gran(&MAIN_TIME,30,300);
+			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			}*/
+		else if((but==butL)||(but==butL_))
+			{
+			DEMO_TIME--;
+			gran(&DEMO_TIME,0,60);
+			//ee_24c01_write_2byte(EE_DEMO_TIME,DEMO_TIME);
+			}
+/*		else if(but==butL_)
+			{
+			MAIN_TIME=(((MAIN_TIME/10)-1)*10);
+			gran(&MAIN_TIME,30,300);
+			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			} */
+		//speed=1;
+
+		}
+
+	else if(sub_ind==3)
+		{
+		if((but==butR)||(but==butR_))
+			{
+			MAIN_VOLUME++;
+			gran(&MAIN_VOLUME,10,100);
+			//ee_24c01_write_2byte(EE_MAIN_VOLUME,MAIN_VOLUME);
+			}
+		else if((but==butL)||(but==butL_))
+			{
+			MAIN_VOLUME--;
+			gran(&MAIN_VOLUME,10,100);
+			//ee_24c01_write_2byte(EE_MAIN_VOLUME,MAIN_VOLUME);
+			}
+		speed=1;
+		}
+	else if(sub_ind==4)
+		{
+		if((but==butR)||(but==butR_))
+			{
+			NUM_OF_FILES++;
+			gran(&NUM_OF_FILES,1,20);
+			//ee_24c01_write_2byte(EE_NUM_OF_FILES,NUM_OF_FILES);
+			}
+		else if((but==butL)||(but==butL_))
+			{
+			NUM_OF_FILES--;
+			gran(&NUM_OF_FILES,1,20);
+			//ee_24c01_write_2byte(EE_NUM_OF_FILES,NUM_OF_FILES);
+			}
+		}
+	else if(sub_ind==5)
+		{
+		if(but==butE_)tree_up(iFisk_prl,0,0,0);
+		}
+	else if(sub_ind==6)
+		{
+		if(but==butE_)tree_down(0,0);
+		}														
+	}
+else if(ind==iFisk_prl)
+	{
+	short tempU;
+	speed=1;
+	if ((but==butU)||(but==butU_))parol[sub_ind]++;
+	else if ((but==butD)||(but==butD_))parol[sub_ind]--;
+	gran_ring_char(&parol[sub_ind],0x00,0x09);
+	if (but==butR)
+		{
+		sub_ind++;
+		gran_ring_char(&sub_ind,0,2);
+		} 
+	else if (but==butL)
+		{ 
+		sub_ind--;
+		gran_ring_char(&sub_ind,0,2); 
+		}
+	else if(but==butE)
+		{
+		tempU=parol[2]+(parol[1]*10U)+(parol[0]*100U);
+		if(ind==iFisk_prl)
+			{
+	     	if(tempU==PAROL_FISK) 
+				{
+				tree_down(0,0);
+				tree_up(iFisk,0,0,0);
+				ret(15);
+				parol[0]=0;
+				parol[1]=0;
+				parol[2]=0;
+				}
+			else 
+				{
+				ind=iDnd;
+				ret(15);
+				}
+			}
+		}
+	}
+else if(ind==iDeb)
+	{ 
+     if(but==butL)
+     	{
+    		sub_ind--;
+     	gran_ring_char(&sub_ind,0,2);
+     	}
+ 	else if(but==butR)
+     	{
+     	sub_ind++;
+     	gran_ring_char(&sub_ind,0,2);
+     	}
+	}		 			
+but_an_end:
+n_but=0;
 }
 
 /*----------------------------------------------------------------------------
@@ -492,26 +847,34 @@ if (SysTick_Config(SystemCoreClock / 44100)) /* SysTick 1 msec interrupts  */
 lcd_init  ();                               // initialise LCD              
 lcd_clear (); 
 //lcd_print ("  www.keil.com  ");
+
+FLASH_Unlock();
+
+EE_Init();
 	
 while(1) 
 	{   		/* Loop forever               */
-		
-if(b10Hz)
-	{
-	b10Hz=0;
-	ind_hndl();
-		
-	lcd_out(lcd_buffer);
-	}
 if(b100Hz)
 	{
 	b100Hz=0;
-	//LED_reverse();
-	//
+	but_drv();
+	but_an();
+	
 	}
+	
+if(b10Hz)
+	{
+	b10Hz=0;
+	ind_hndl();	
+	lcd_out(lcd_buffer);
+	ret_hndl();
+	}
+
 if(b1Hz)
 	{
 	b1Hz=0;
+		
+	//MAIN_TIME++;
 	//LED_reverse();
 	//
 	}
