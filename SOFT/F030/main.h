@@ -58,7 +58,8 @@ extern signed short main_demo_cnt;
 
 
 //-----------------------------------------------
-//Τ―π Ά«ζ®¨ε΅Άο²―π®¨§γ¦¤ζ®¨ζ¬ ρ™½ªς“
+//Σοπΰβλενθε βξροπξθηβεδενθεμ μσηϋκθ
 extern signed short main_music_cnt;
 extern signed short max_main_music_cnt;
 extern signed short fade_out_main_music_cnt;
+

@@ -123,6 +123,20 @@ signed short main_music_cnt;
 signed short max_main_music_cnt;
 signed short fade_out_main_music_cnt;
 
+//**********************************************
+//Карта памяти ЕЕПРОМ
+const short EE_MAIN_TIME =	0x1111;
+const short EE_DEMO_TIME	=	0x2222;
+const short EE_DEMO_PERIOD =	0x3333;
+const short EE_NUM_OF_FILES =	0x4444;
+const short EE_MAIN_VOLUME =	0x5555;
+const short EE_MAIN_CNT =	0x6666;
+
+uint16_t VirtAddVarTab[NB_OF_VAR] = {0x5555, 0x6666, 0x7777};
+
+
+
+
 volatile uint32_t msTicks;                /* counts 1ms timeTicks       */
 
 
@@ -158,6 +172,19 @@ if(ret_duty)
      }
 }
 
+
+
+//-----------------------------------------------
+void memo_read(void)
+{
+EE_ReadVariable((uint16_t)EE_MAIN_TIME, (uint16_t*)&MAIN_TIME);
+EE_ReadVariable((uint16_t)EE_DEMO_TIME, (uint16_t*)&DEMO_TIME);
+EE_ReadVariable((uint16_t)EE_DEMO_PERIOD, (uint16_t*)&DEMO_PERIOD);
+EE_ReadVariable((uint16_t)EE_NUM_OF_FILES, (uint16_t*)&NUM_OF_FILES);
+EE_ReadVariable((uint16_t)EE_MAIN_VOLUME, (uint16_t*)&MAIN_VOLUME);
+EE_ReadVariable((uint16_t)EE_MAIN_CNT, (uint16_t*)&MAIN_CNT);
+}
+
 //-----------------------------------------------
 void ind_hndl(void)
 {
@@ -170,13 +197,13 @@ if(ind==iMn)
 		bgnd_par(
 			" Установленное  ",//string1,
 			" время   0!:0@  "//string2
-			/*" world  0!:0@ "*/);
+			);
 			
-			//lcd_buffer[1]=0xa7;
+			
 
-		//int2lcd(MAIN_TIME/60,'!',0);
-		//int2lcd(MAIN_TIME%60,'@',0);
-		int2lcd(MAIN_TIME,'!',0);
+		int2lcd(MAIN_TIME/60,'!',0);
+		int2lcd(MAIN_TIME%60,'@',0);
+		//int2lcd(MAIN_TIME,'!',0);
 		//int2lcd(but,'@',0);
 		//fr=5;
 
@@ -448,6 +475,8 @@ if(ind==iMn)
 		}
 	if(but==butR)
 		{
+		MAIN_TIME++;
+		EE_WriteVariable(VirtAddVarTab[0], MAIN_TIME);
 		}
 	if(but==butD)
 		{
@@ -482,25 +511,25 @@ else if(ind==iSet)
 			{
 			MAIN_TIME=(((MAIN_TIME/10)+1)*10);//MAIN_TIME++;
 			gran(&MAIN_TIME,30,300);
-			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			EE_WriteVariable(EE_MAIN_TIME, MAIN_TIME);
 			}
 		else if(but==butR_)
 			{
 			MAIN_TIME=(((MAIN_TIME/10)+1)*10);
 			gran(&MAIN_TIME,30,300);
-			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			EE_WriteVariable(EE_MAIN_TIME, MAIN_TIME);
 			}
 		else if(but==butL)
 			{
 			MAIN_TIME=(((MAIN_TIME/10)-1)*10);//MAIN_TIME--;
 			gran(&MAIN_TIME,30,300);
-			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			EE_WriteVariable(EE_MAIN_TIME, MAIN_TIME);
 			}
 		else if(but==butL_)
 			{
 			MAIN_TIME=(((MAIN_TIME/10)-1)*10);
 			gran(&MAIN_TIME,30,300);
-			//ee_24c01_write_2byte(EE_MAIN_TIME,MAIN_TIME);
+			EE_WriteVariable(EE_MAIN_TIME, MAIN_TIME);
 			}
 		//speed=1;
 
@@ -512,25 +541,25 @@ else if(ind==iSet)
 			{
 			DEMO_PERIOD=(((DEMO_PERIOD/10)+1)*10);//DEMO_PERIOD++;
 			gran(&DEMO_PERIOD,0,300);
-			//ee_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
+			EE_WriteVariable(EE_DEMO_PERIOD, DEMO_PERIOD);
 			}
 		else if(but==butR_)
 			{
 			DEMO_PERIOD=(((DEMO_PERIOD/10)+1)*10);
 			gran(&DEMO_PERIOD,0,300);
-			//ee_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
+			EE_WriteVariable(EE_DEMO_PERIOD, DEMO_PERIOD);
 			}
 		else if(but==butL)
 			{
 			DEMO_PERIOD=(((DEMO_PERIOD/10)-1)*10);//DEMO_PERIOD--;
 			gran(&DEMO_PERIOD,0,300);
-			//ee_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
+			EE_WriteVariable(EE_DEMO_PERIOD, DEMO_PERIOD);
 			}
 		else if(but==butL_)
 			{
 			DEMO_PERIOD=(((DEMO_PERIOD/10)-1)*10);
 			gran(&DEMO_PERIOD,0,300);
-			//ee_24c01_write_2byte(EE_DEMO_PERIOD,DEMO_PERIOD);
+			EE_WriteVariable(EE_DEMO_PERIOD, DEMO_PERIOD);
 			}
 		//speed=1;
 
@@ -541,7 +570,7 @@ else if(ind==iSet)
 			{
 			DEMO_TIME++;
 			gran(&DEMO_TIME,0,60);
-			//ee_24c01_write_2byte(EE_DEMO_TIME,DEMO_TIME);
+			EE_WriteVariable(EE_DEMO_TIME, DEMO_TIME);
 			}
 	/*	else if(but==butR_)
 			{
@@ -553,7 +582,7 @@ else if(ind==iSet)
 			{
 			DEMO_TIME--;
 			gran(&DEMO_TIME,0,60);
-			//ee_24c01_write_2byte(EE_DEMO_TIME,DEMO_TIME);
+			EE_WriteVariable(EE_DEMO_TIME, DEMO_TIME);
 			}
 /*		else if(but==butL_)
 			{
@@ -571,13 +600,13 @@ else if(ind==iSet)
 			{
 			MAIN_VOLUME++;
 			gran(&MAIN_VOLUME,10,100);
-			//ee_24c01_write_2byte(EE_MAIN_VOLUME,MAIN_VOLUME);
+			EE_WriteVariable(EE_MAIN_VOLUME, MAIN_VOLUME);
 			}
 		else if((but==butL)||(but==butL_))
 			{
 			MAIN_VOLUME--;
 			gran(&MAIN_VOLUME,10,100);
-			//ee_24c01_write_2byte(EE_MAIN_VOLUME,MAIN_VOLUME);
+			EE_WriteVariable(EE_MAIN_VOLUME, MAIN_VOLUME);
 			}
 		speed=1;
 		}
@@ -587,13 +616,13 @@ else if(ind==iSet)
 			{
 			NUM_OF_FILES++;
 			gran(&NUM_OF_FILES,1,20);
-			//ee_24c01_write_2byte(EE_NUM_OF_FILES,NUM_OF_FILES);
+			EE_WriteVariable(EE_NUM_OF_FILES, NUM_OF_FILES);
 			}
 		else if((but==butL)||(but==butL_))
 			{
 			NUM_OF_FILES--;
 			gran(&NUM_OF_FILES,1,20);
-			//ee_24c01_write_2byte(EE_NUM_OF_FILES,NUM_OF_FILES);
+			EE_WriteVariable(EE_NUM_OF_FILES, NUM_OF_FILES);
 			}
 		}
 	else if(sub_ind==5)
@@ -868,6 +897,7 @@ if(b10Hz)
 	ind_hndl();	
 	lcd_out(lcd_buffer);
 	ret_hndl();
+	memo_read();
 	}
 
 if(b1Hz)
