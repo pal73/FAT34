@@ -1,6 +1,6 @@
 main.o: main.c
 main.o: main.h
-main.o: C:\Keil\ARM\RV31\INC\RTL.h
+main.o: C:\Keil\\ARM\RV31\INC\RTL.h
 main.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h
 main.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h
 main.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h
@@ -29,7 +29,7 @@ main.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_systick.h
 main.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_tim.h
 main.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_usart.h
 main.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_wwdg.h
-main.o: C:\Keil\ARM\RV31\INC\string.h
+main.o: C:\Keil\\ARM\RV31\INC\string.h
 main.o: STM32_Init.h
 main.o: common_func.h
 main.o: lcd_pal_4_2.h

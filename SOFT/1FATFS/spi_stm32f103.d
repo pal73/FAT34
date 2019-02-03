@@ -1,6 +1,6 @@
 spi_stm32f103.o: SPI_STM32F103.c
-spi_stm32f103.o: C:\Keil\ARM\RV31\INC\File_Config.h
-spi_stm32f103.o: C:\Keil\ARM\RV31\INC\RTL.h
+spi_stm32f103.o: C:\Keil\\ARM\RV31\INC\File_Config.h
+spi_stm32f103.o: C:\Keil\\ARM\RV31\INC\RTL.h
 spi_stm32f103.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h
 spi_stm32f103.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h
 spi_stm32f103.o: C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h
